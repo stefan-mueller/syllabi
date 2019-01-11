@@ -17,7 +17,7 @@
 \usepackage[parfill]{parskip}
 \usepackage{url}
 \urlstyle{same}
-\usepackage[medium]{titlesec}
+\usepackage[small]{titlesec}
 \usepackage{marvosym}
 
 \setcounter{secnumdepth}{0}
@@ -30,7 +30,7 @@
 
 \input{mueller_bib_custom.tex}
 
-\bibliography{/Users/stefan/GitHub/phd-thesis/mueller-library/muellerlibrary.bib}
+\bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
 
 
 \usepackage{xcolor}
@@ -53,7 +53,7 @@
 
 \noindent
 \adjustbox{valign=t}{\begin{minipage}{0.38\textwidth}% adapt widths of minipages to your needs
-\includegraphics[width=\linewidth]{/uzh_logo_en}
+\includegraphics[width=\linewidth]{pictures/uzh_logo_en}
 \end{minipage}}%
 \hfill%
 \adjustbox{valign=t}{\begin{minipage}{0.62\textwidth}\raggedleft
@@ -76,7 +76,12 @@ University of Zurich \\
 {\Large \textbf{Quantitative Text Analysis}} 
 \bigskip
 
-{\large  \textcolor{red}{Draft (last update: \today)}}
+%{\large  \textcolor{red}{Draft (last update: \today)}}
+
+{\large  {Draft (last update: \today)}}\\
+\bigskip
+
+Latest version: \url{https://muellerstefan.net/files/syllabus-2019-spring-qta.pdf}
 \end{center}
 
 \vspace{1.5cm}
@@ -110,7 +115,7 @@ In recent times the availability of textual data has increased massively, and th
 Each session also contains practical, hands-on exercises to apply the methods to real texts. Most of these methods can be reduced to a three-step process: first, identifying texts and units of texts for analysis; second, extract quantitatively measured features from these texts and converting them to a quantitative feature matrix; third, analyse this matrix with statistical methods, such as dictionary construction and application, scaling models, and topic models, to draw inferences about the texts. Students will learn how how to apply these steps to various types of texts. There will be two homeworks which cover the theoretical assumptions as well as modelling and coding of text data. Moreover, students will use their own text corpus (or one of various text corpora provided for this course) to answer a substantive question from their personal research interests for a final project.
 
 
-\subsection*{Details}
+\section*{Details}
 
 \begin{itemize}
 \item MA/PhD seminar
@@ -118,6 +123,15 @@ Each session also contains practical, hands-on exercises to apply the methods to
 \item Grading: 2 Homeworks (20\% each); Research Paper (60\%)
 \end{itemize}
 
+\section*{Learning Outcomes}
+
+At the completion of this course, students will be able to:
+\begin{enumerate}
+\item Understand fundamental issues in (quantitative) text analysis such as inter-coder agreement, reliability, validation, accuracy, and precision.
+\item Convert texts into quantitative matrices of features, and then analyse those features using statistical methods.
+\item Use human coding and annotations of texts to train supervised classifiers.
+\item  Apply these methods to a custom text corpus in order to tackle a substantive research question.
+\end{enumerate}
 
 
 \section*{Introductory Readings}
@@ -137,14 +151,14 @@ The seminar does not build on a single text book, but relies mostly on papers an
 
 The following books and websites are helpful to refresh and extend the knowledge of the \textsf{R} statistical programming language, RMarkdown, and the \texttt{quanteda} package.  Websites such as \href{https://stackoverflow.com/}{Stack OverFlow}, \href{https://www.r-bloggers.com}{R bloggers}, and the documentation of \textsf{R} packages will be useful for solving practical problems. The books below are published in print, but also legally available online.
 
-\textsf{R}, RMarkdown, and \texttt{quanteda}:
+\subsubsection*{\textsf{R}, RMarkdown, and \texttt{quanteda}}
 \begin{itemize}
 \item \fullcite{wickham17}.
 \item \fullcite{xie18}.
 \item \fullcite{watanabemueller}.
 \end{itemize}
 
-Data Visualisation: 
+\subsubsection*{Data visualisation}
 
 \begin{itemize}
 \item \fullcite{healy19}.
@@ -153,26 +167,17 @@ Data Visualisation:
 
 \section*{Software and Packages}
 
-The applications of the course are based on the \textsf{R} statistical programming language. Participants should download and install the latest versions of \href{https://www.r-project.org}{R} and \href{https://www.rstudio.com/products/rstudio/}{RStudio}. Moreover, students should install the latest releases of the following  \textsf{R} packages, which will be used throughout the course.
+The applications of the course are based on the \textsf{R} statistical programming language. Participants should download and install the latest versions of \textsf{\href{https://www.r-project.org}{R}} and \href{https://www.rstudio.com/products/rstudio/}{RStudio}. Moreover, students should install the latest releases of the following  \textsf{R} packages, which will be used throughout the course.
 
 \begin{itemize}
 \item Quantitative text analysis: \href{https://quanteda.io/}{\texttt{quanteda}}
 \item Importing text data: \href{https://readtext.quanteda.io/}{\texttt{readtext}}
-\item Topic models: \href{https://www.structuraltopicmodel.com/}{\texttt{stm}}
-\item Data wrangling and visualisation: \href{https://www.tidyverse.org}{\texttt{tidyverse}} (esp. \href{https://dplyr.tidyverse.org}{\texttt{dplyr}}, \href{https://tidyr.tidyverse.org}{tidyr} and \href{https://ggplot2.tidyverse.org}{\texttt{ggplot2}})
+\item Topic models: \href{https://cran.r-project.org/web/packages/topicmodels/index.html}{\texttt{topicmodels}}  and \href{https://www.structuraltopicmodel.com/}{\texttt{stm}}
+\item Data wrangling and visualisation: \href{https://www.tidyverse.org}{\texttt{tidyverse}} (esp. \href{https://dplyr.tidyverse.org}{\texttt{dplyr}}, \href{https://tidyr.tidyverse.org}{tidyr}, \href{https://lubridate.tidyverse.org}{\texttt{lubridate}}, and \href{https://ggplot2.tidyverse.org}{\texttt{ggplot2}})
 \item Creating documents and reports: \href{https://rmarkdown.rstudio.com}{\texttt{rmarkdown}} and \href{https://yihui.name/knitr/}{\texttt{knitr}}
-\item NLP (e.g., part-of-speech tagging and lemmatisation): \href{https://spacyr.quanteda.io}{\texttt{spacyr}} (installation not mandatory)
+\item Part-of-speech tagging and lemmatisation: \href{https://spacyr.quanteda.io}{\texttt{spacyr}} (installation not mandatory)
 \end{itemize}
 
-\section*{Learning Outcomes}
-
-At the completion of this course, students will be able to:
-\begin{enumerate}
-\item Understand fundamental issues in (quantitative) text analysis such as inter-coder agreement, reliability, validation, accuracy, and precision.
-\item Convert texts into quantitative matrices of features, and then analyse those features using statistical methods.
-\item Use human coding and annotations of texts to train supervised classifiers.
-\item  Apply these methods to a custom text corpus in order to tackle a substantive research question.
-\end{enumerate}
 
 
 
@@ -185,22 +190,22 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 
 
 \begin{itemize}
-\item Students are expected to read all papers or chapters assigned under \textbf{Readings} as this literature serves as the basis for in-class discussions about the advantages, disadvantages, and applicability to social science questions. For each session, I also assign a variety of optional readings which are \textit{not} mandatory.
-\item Students two \textbf{Homeworks}, each of which counts towards  20\% of the final grade. The homeworks will be distributed via \href{https://www.id.uzh.ch/de/dl/elearning/services/olatunizh.html}{OLAT} 14 days before the submission deadline as an RMarkdown file. Students fill in the answers and solutions in the same RMarkdown file, rename it as to \texttt{hw\_01/02\_surname\_firstname.Rmd}, knit it as an \texttt{html} file, and submit it via OLAT. Only knitted \texttt{html} files will be accepted. The deadline for Homework 1 is \textbf{March 22, 2019 (8:00pm CET)}, the deadline for Homework 2 is \textbf{April 26, 2019 (8:00pm CET)}. More details on the homeworks will be provided in the tutorials. 
-\item Students also submit a \textbf{Research Paper} which counts towards 60\% of the final grade. The research paper is a written analysis of 5,000--5,500 words (including bibliography, captions, and footnotes). in the research projects students develop a research design to answer a question with textual data. Students are free to answer questions from all subfields of political science, but must justify their choice and the relevance of the question. The research papers must be submitted via OLAT as a \texttt{pdf} document before \textbf{June 14, 2019 (8:00pm CET)}. In the 10th and 11th session, each student will present the research question, relevance, text corpus, and methodological approach in a presentation, and submit a 1,000 words research proposal covering these aspects. Each project will be discussed critically by another seminar participant, and students will receive written feedback from me. Detailed instructions on the research paper, the presentation, and the in-class discussion will be provided on OLAT.
+\item Students are expected to read all papers or chapters assigned under \textbf{Readings}. These readings serve as the basis for in-class discussions about the advantages, disadvantages, and applicability of the various approaches to social science questions. For each session, I also assign a variety of optional readings which are not mandatory, but I strongly encourage students to (at least) skim these readings . Both the required  and the optional readings consist of technical  as well literature and at least one practical application of the respective method to a research question.
+\item Students submit two \textbf{Homeworks}, each of which counts towards  20\% of the final grade. The homeworks will be distributed via \href{https://www.id.uzh.ch/de/dl/elearning/services/olatunizh.html}{OLAT} 14 days before the submission deadline as an RMarkdown file. Students fill in the answers and solutions in the same RMarkdown file, rename it  to \texttt{hw\_01/02\_surname\_firstname.Rmd}, knit it as an \texttt{html} file, and submit it via OLAT. Only knitted \texttt{html} files will be accepted. The deadline for Homework 1 is \textbf{March 22, 2019 (8:00pm CET)}, the deadline for Homework 2 is \textbf{April 26, 2019 (8:00pm CET)}. More details on the homeworks will be provided in the first session(s) of the course. 
+\item Students also submit a \textbf{Research Paper} which counts towards 60\% of the final grade. The research paper is a written analysis of 5,000--5,500 words (including bibliography, captions, and footnotes). In the research projects students develop a research design to answer a question with textual data. Students are free to answer questions from all subfields of political science, but must justify their choice and the relevance of the question.  Students registered for an MA degree in another social science discipline are encouraged to develop a research project answering a question from their subject. The research papers must be submitted via OLAT as a \texttt{pdf} document before \textbf{June 14, 2019 (8:00pm CET)}. In the 10th and 11th session, each student gives a five minute presentation, covering the research question, relevance, text corpus, and methodological approach. Alongside with the presentation,  students will submit a 1,000 words research proposal covering these aspects. Each project will be discussed through \textit{written} feedback by another seminar participant, and students will also receive written feedback from me. Detailed instructions on the research paper, the presentation, and the in-class discussion will be provided via OLAT.
 \end{itemize}
 
 
 
-\begin{table}[h] \centering \doublespacing
+\begin{table}[h] \centering \onehalfspacing
 \caption*{Overview of deadlines}
-\begin{tabular}{ l l } 
+\begin{tabular}{ l l l} 
 \toprule
-Date and time & Assignment \\
+Date &  Time & Assignment \\
 \midrule
-March 22, 2019 (8:00pm CET) &  Homework 1  \\
-April 26, 2019 (8:00pm CET) & Homework 2  \\
-June 14, 2019 (8:00pm CET) & Research Paper   \\
+Friday, March 22, 2019 & 8:00pm CET &  Homework 1 (20\%)  \\
+Friday, April 26, 2019 & 8:00pm CET  & Homework 2 (20\%) \\
+Friday, June 14, 2019 & 8:00pm CET & Research Paper  (60\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -209,25 +214,31 @@ June 14, 2019 (8:00pm CET) & Research Paper   \\
 
 \tableofcontents
 
+\newpage
 
-\section{Week 1: Organisation and Introduction (18/02/2019)}
+\section{Week 1: Organisation and Introduction (February 18)}
 
+\begin{itemize}
+\item What are quantitative text analysis and natural language processing?
+\item What is the structure of the course and what are the expectations?
+\item Application: installing packages and setting up a Project in RStudio
+\end{itemize}
 
 \subsubsection*{Readings}
 \begin{itemize}
 \item \fullcite{grimmer13}.
+\item \fullcite{dimaggio15}.
 \end{itemize}
 
 \subsubsection*{Optional}
 \begin{itemize}
 \item \fullcite{lazer17}.
 \item \fullcite{hirschberg15}.
-\item \fullcite{monroe15}.
 \item \fullcite{gentzkow17}.
 \end{itemize}
 
 
-\section{Week 2: Assumptions and  Workflow (25.02.2019)}
+\section{Week 2: Assumptions and  Workflow (February 25)}
 
 \begin{itemize}
 \item What are the underlying assumptions of text-as-data approaches?
@@ -243,14 +254,14 @@ June 14, 2019 (8:00pm CET) & Research Paper   \\
 
 \subsubsection*{Optional}
 \begin{itemize}
-\item \fullcite{dimaggio15}.
 \item \fullcite{gilardi19}.
+\item \fullcite{monroe15}.
 \end{itemize}
 
-\section{Week 3:  Tokenisation and Document-Feature Matrix (04.03.2019)}
+\section{Week 3:  Tokenisation and Document-Feature Matrix (March 04)}
 
 \begin{itemize}
-\item What are tokens, types, and features?
+\item What are tokens, types, and features? What is the difference between stemming and lemmatisation?
 \item Application: tokenisation and creating a document-feature matrix
 \end{itemize}
 
@@ -262,7 +273,7 @@ June 14, 2019 (8:00pm CET) & Research Paper   \\
 \end{itemize}
  
   
-\section{Week 4: Dictionary Approaches and Sentiment Analysis (11.03.2019)}
+\section{Week 4: Dictionary Approaches and Sentiment Analysis (March 11)}
 
 \begin{itemize}
 \item What are automated dictionary approaches? How can we create, test, and refine dictionaries?
@@ -289,10 +300,10 @@ June 14, 2019 (8:00pm CET) & Research Paper   \\
 % \item \fullcite[Chapter 19 (Lexicons for Sentiment, Affect, and Connotation)]{jurafsky}.
 \end{itemize}
 
-\section{Week 5: Textual Statistics, Text Similarity and Text Reuse (18.03.2019)}
+\section{Week 5: Textual Statistics, Text Similarity and Text Reuse (March 18)}
 
 \begin{itemize}
-\item How do texts differ in their `readability'? What are measures to estimate the similarity and distance between texts?
+\item How do texts differ in their `readability' and complexity? What are measures to estimate the similarity and distance between texts?
 \item Application: creating n-grams; estimating complexity and similarities/distances of texts
 \end{itemize}
 
@@ -311,7 +322,7 @@ June 14, 2019 (8:00pm CET) & Research Paper   \\
 \end{itemize}
 
 
-\section{Week 6: Human Coding and Document Classification (25.03.2019)}
+\section{Week 6: Human Coding and Document Classification (March 25)}
 
 \begin{itemize}
 \item How can we classify documents into known and pre-defined categories? What is crowd-sourced coding?
@@ -338,7 +349,7 @@ June 14, 2019 (8:00pm CET) & Research Paper   \\
 \end{itemize}
 
  
-\section{Week 7:  Supervised Scaling (01.04.2019)}
+\section{Week 7:  Supervised Scaling (April 1)}
 
 \begin{itemize}
 \item What are the assumptions, advantages, and problems of supervised scaling?
@@ -360,7 +371,7 @@ June 14, 2019 (8:00pm CET) & Research Paper   \\
 \end{itemize}
 
 
-\section{Week 8: Unsupervised Scaling (15.04.2019)}
+\section{Week 8: Unsupervised Scaling (April 15)}
 
 \begin{itemize}
 \item What are differences between supervised and unsupervised scaling methods? How can we validate scaling models?
@@ -377,16 +388,17 @@ June 14, 2019 (8:00pm CET) & Research Paper   \\
 
 \subsubsection*{Optional}
 \begin{itemize}
+\item \fullcite{lauderdale16}.
 \item \fullcite{greene16b}.
 \item \fullcite{baerg20}.
 \item \fullcite{storz18}.
 \end{itemize}
 
 
-\section{Week 9: Topic Models (29.04.2019)}
+\section{Week 9: Topic Models (April 29)}
 
 \begin{itemize}
-\item How does are unsupervised classification work? What are the assumptions, advantages, and caveats of topic models? 
+\item How does unsupervised document classification work? What are the assumptions, advantages, and caveats of topic models? 
 \item Application: Latent Dirichlet allocation (LDA) and structural topic models (STM)
 \end{itemize}
 
@@ -400,23 +412,25 @@ June 14, 2019 (8:00pm CET) & Research Paper   \\
 
 \subsubsection*{Optional}
 \begin{itemize}
+\item \fullcite{grimmer10}.
 \item \fullcite{boussalis16}.
 \item \fullcite{catalinac16}.
 \item \fullcite{jacobi16}.
+\item \fullcite{gilardi18}.
 \end{itemize}
 
-\section{Week 10: Presentation of Projects (I) (06.05.2019)}
+\section{Week 10: Presentation of Projects (I) (May 6)}
 
 In this session, the first half of students will present their projects. The remaining projects will be presented in the following session. Detailed instructions on the presentations, the written outline of the research design, and how to discuss each other's proposal will be distributed through OLAT.
 
 
-\section{Week 11: Presentation of Projects (II) (13.04.2019)}
+\section{Week 11: Presentation of Projects (II) (May 13)}
 
 In this session, the second half of students will present their projects. 
 
 
 
-\section{Week 12: Social Media and Multilingual Analyses (20.05.2019)}
+\section{Week 12: Social Media and Multilingual Analysis (May 20)}
 
 \begin{itemize}
 \item How can we analyse social media posts with text-as-data approaches? In what ways can we conduct multilingual analyses? 
@@ -437,7 +451,7 @@ In this session, the second half of students will present their projects.
 \end{itemize}
 
 
-\section{Week 13: Beyond Bag-of-Words (27.05.2019)}
+\section{Week 13: Beyond Bag-of-Words (May 27)}
 
 
 \begin{itemize}
@@ -460,7 +474,7 @@ In this session, the second half of students will present their projects.
 \end{itemize}
 
 
-
+%\newpage
 \sloppy
 \renewcommand*{\bibfont}{\small}
 
@@ -469,9 +483,9 @@ In this session, the second half of students will present their projects.
 
 \bigskip
 
-\begin{center}
-Last updated: \today
-\end{center}
+%\begin{center}
+%Last updated: \today
+%\end{center}
 
 \end{document}
 
