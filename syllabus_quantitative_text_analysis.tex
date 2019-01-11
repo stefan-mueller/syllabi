@@ -1,0 +1,478 @@
+\documentclass[abstract=on,parskip=full,headings=standardclasses,fontsize=11pt,paper=a4]{scrartcl}
+\usepackage[paper=a4paper,left=21mm,right=21mm,top=20mm,bottom=25mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\usepackage{adjustbox}
+%\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage{fullpage}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{lmodern}
+\usepackage[parfill]{parskip}
+\usepackage{url}
+\urlstyle{same}
+\usepackage[medium]{titlesec}
+\usepackage{marvosym}
+
+\setcounter{secnumdepth}{0}
+
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Course Structure}%
+}
+
+
+\input{mueller_bib_custom.tex}
+
+\bibliography{/Users/stefan/GitHub/phd-thesis/mueller-library/muellerlibrary.bib}
+
+
+\usepackage{xcolor}
+\definecolor{JournalBlue}{RGB}{0, 12, 146}
+%https://en.wikibooks.org/wiki/LaTeX/Colors
+\usepackage[colorlinks=true, linkcolor=JournalBlue, filecolor=black, urlcolor=JournalBlue, pdfborder={0 0 0},citecolor=JournalBlue]{hyperref}%RoyalBlue
+%\usepackage[colorlinks]{hyperref}
+
+\clubpenalty = 10000 
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+\setlength\parindent{0pt}
+
+
+
+\begin{document}
+	
+\singlespacing
+
+\noindent
+\adjustbox{valign=t}{\begin{minipage}{0.38\textwidth}% adapt widths of minipages to your needs
+\includegraphics[width=\linewidth]{/uzh_logo_en}
+\end{minipage}}%
+\hfill%
+\adjustbox{valign=t}{\begin{minipage}{0.62\textwidth}\raggedleft
+{\footnotesize
+\textbf{Stefan Müller} \\
+Researcher \\
+Chair of Policy Analysis \\
+University of Zurich \\
+%\Letter\ \href{mailto:mullers@tcd.ie}{\textsf{mullers@tcd.ie}} \\
+\url{https://muellerstefan.net} \\
+}
+\end{minipage}}
+
+\singlespacing
+\vspace{1cm}
+
+\begin{center}
+{\large Seminar \href{https://studentservices.uzh.ch/uzh/anonym/vvz/index.html#/details/2018/004/SM/50926554}{615786}} \\ 
+\medskip
+{\Large \textbf{Quantitative Text Analysis}} 
+\bigskip
+
+{\large  \textcolor{red}{Draft (last update: \today)}}
+\end{center}
+
+\vspace{1.5cm}
+
+\hrule
+\medskip
+% first column
+\begin{minipage}[t]{0.5\textwidth}
+Term: Spring term 2019 \\
+Time: Monday, 12:15--13:45 \\
+Lecture Room: \textbf{NA} \\
+ECTS: 6.0
+\end{minipage}
+%second column
+\begin{minipage}[t]{0.5\textwidth}
+\begin{flushright}
+Lecturer: Stefan Müller \\
+Office:  AFL H 349\\
+Office hours: \textbf{NA} \\
+E-Mail: \textsf{\href{mailto:mueller@ipz.uzh.ch}{mueller@ipz.uzh.ch}}
+\end{flushright}
+\end{minipage}
+\medskip
+\vspace{2.5mm}
+\hrule 
+
+\section*{Course Content}
+
+In recent times the availability of textual data has increased massively, and there are multiple opportunities for analysing these data to answer social science research questions. This course introduces students of political science to the quantitative analysis of textual data. We cover a treatment of underlying theoretical assumptions, applications of these methods in the scholarly literature, and the respective implementations in the \textsf{R} statistical programming language.
+
+Each session also contains practical, hands-on exercises to apply the methods to real texts. Most of these methods can be reduced to a three-step process: first, identifying texts and units of texts for analysis; second, extract quantitatively measured features from these texts and converting them to a quantitative feature matrix; third, analyse this matrix with statistical methods, such as dictionary construction and application, scaling models, and topic models, to draw inferences about the texts. Students will learn how how to apply these steps to various types of texts. There will be two homeworks which cover the theoretical assumptions as well as modelling and coding of text data. Moreover, students will use their own text corpus (or one of various text corpora provided for this course) to answer a substantive question from their personal research interests for a final project.
+
+
+\subsection*{Details}
+
+\begin{itemize}
+\item MA/PhD seminar
+\item  Language: English
+\item Grading: 2 Homeworks (20\% each); Research Paper (60\%)
+\end{itemize}
+
+
+
+\section*{Introductory Readings}
+
+\subsection*{General Readings}
+
+The seminar does not build on a single text book, but relies mostly on papers and chapters of books. For  a general overview of quantitative text analysis, natural language processing, and computational social science, the following books are recommended.
+
+\begin{itemize}
+\item \fullcite{jurafsky}.
+\item \fullcite{manning08}.
+\item \fullcite{salganik18}.
+\end{itemize}
+
+
+\subsection*{Technical Background}
+
+The following books and websites are helpful to refresh and extend the knowledge of the \textsf{R} statistical programming language, RMarkdown, and the \texttt{quanteda} package.  Websites such as \href{https://stackoverflow.com/}{Stack OverFlow}, \href{https://www.r-bloggers.com}{R bloggers}, and the documentation of \textsf{R} packages will be useful for solving practical problems. The books below are published in print, but also legally available online.
+
+\textsf{R}, RMarkdown, and \texttt{quanteda}:
+\begin{itemize}
+\item \fullcite{wickham17}.
+\item \fullcite{xie18}.
+\item \fullcite{watanabemueller}.
+\end{itemize}
+
+Data Visualisation: 
+
+\begin{itemize}
+\item \fullcite{healy19}.
+\item \fullcite{wilke19}.
+\end{itemize}
+
+\section*{Software and Packages}
+
+The applications of the course are based on the \textsf{R} statistical programming language. Participants should download and install the latest versions of \href{https://www.r-project.org}{R} and \href{https://www.rstudio.com/products/rstudio/}{RStudio}. Moreover, students should install the latest releases of the following  \textsf{R} packages, which will be used throughout the course.
+
+\begin{itemize}
+\item Quantitative text analysis: \href{https://quanteda.io/}{\texttt{quanteda}}
+\item Importing text data: \href{https://readtext.quanteda.io/}{\texttt{readtext}}
+\item Topic models: \href{https://www.structuraltopicmodel.com/}{\texttt{stm}}
+\item Data wrangling and visualisation: \href{https://www.tidyverse.org}{\texttt{tidyverse}} (esp. \href{https://dplyr.tidyverse.org}{\texttt{dplyr}}, \href{https://tidyr.tidyverse.org}{tidyr} and \href{https://ggplot2.tidyverse.org}{\texttt{ggplot2}})
+\item Creating documents and reports: \href{https://rmarkdown.rstudio.com}{\texttt{rmarkdown}} and \href{https://yihui.name/knitr/}{\texttt{knitr}}
+\item NLP (e.g., part-of-speech tagging and lemmatisation): \href{https://spacyr.quanteda.io}{\texttt{spacyr}} (installation not mandatory)
+\end{itemize}
+
+\section*{Learning Outcomes}
+
+At the completion of this course, students will be able to:
+\begin{enumerate}
+\item Understand fundamental issues in (quantitative) text analysis such as inter-coder agreement, reliability, validation, accuracy, and precision.
+\item Convert texts into quantitative matrices of features, and then analyse those features using statistical methods.
+\item Use human coding and annotations of texts to train supervised classifiers.
+\item  Apply these methods to a custom text corpus in order to tackle a substantive research question.
+\end{enumerate}
+
+
+
+\section*{Syllabus Modification Rights}
+
+I reserve the right to reasonably alter the elements of the syllabus at any time. More often than not this will mean adjusting the reading list to keep pace with the course schedule, although I may change the content of specific sessions depending on the prior knowledge and interests of the course participants.
+
+
+\section*{Expectations and Grading}
+
+
+\begin{itemize}
+\item Students are expected to read all papers or chapters assigned under \textbf{Readings} as this literature serves as the basis for in-class discussions about the advantages, disadvantages, and applicability to social science questions. For each session, I also assign a variety of optional readings which are \textit{not} mandatory.
+\item Students two \textbf{Homeworks}, each of which counts towards  20\% of the final grade. The homeworks will be distributed via \href{https://www.id.uzh.ch/de/dl/elearning/services/olatunizh.html}{OLAT} 14 days before the submission deadline as an RMarkdown file. Students fill in the answers and solutions in the same RMarkdown file, rename it as to \texttt{hw\_01/02\_surname\_firstname.Rmd}, knit it as an \texttt{html} file, and submit it via OLAT. Only knitted \texttt{html} files will be accepted. The deadline for Homework 1 is \textbf{March 22, 2019 (8:00pm CET)}, the deadline for Homework 2 is \textbf{April 26, 2019 (8:00pm CET)}. More details on the homeworks will be provided in the tutorials. 
+\item Students also submit a \textbf{Research Paper} which counts towards 60\% of the final grade. The research paper is a written analysis of 5,000--5,500 words (including bibliography, captions, and footnotes). in the research projects students develop a research design to answer a question with textual data. Students are free to answer questions from all subfields of political science, but must justify their choice and the relevance of the question. The research papers must be submitted via OLAT as a \texttt{pdf} document before \textbf{June 14, 2019 (8:00pm CET)}. In the 10th and 11th session, each student will present the research question, relevance, text corpus, and methodological approach in a presentation, and submit a 1,000 words research proposal covering these aspects. Each project will be discussed critically by another seminar participant, and students will receive written feedback from me. Detailed instructions on the research paper, the presentation, and the in-class discussion will be provided on OLAT.
+\end{itemize}
+
+
+
+\begin{table}[h] \centering \doublespacing
+\caption*{Overview of deadlines}
+\begin{tabular}{ l l } 
+\toprule
+Date and time & Assignment \\
+\midrule
+March 22, 2019 (8:00pm CET) &  Homework 1  \\
+April 26, 2019 (8:00pm CET) & Homework 2  \\
+June 14, 2019 (8:00pm CET) & Research Paper   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\tableofcontents
+
+
+\section{Week 1: Organisation and Introduction (18/02/2019)}
+
+
+\subsubsection*{Readings}
+\begin{itemize}
+\item \fullcite{grimmer13}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{lazer17}.
+\item \fullcite{hirschberg15}.
+\item \fullcite{monroe15}.
+\item \fullcite{gentzkow17}.
+\end{itemize}
+
+
+\section{Week 2: Assumptions and  Workflow (25.02.2019)}
+
+\begin{itemize}
+\item What are the underlying assumptions of text-as-data approaches?
+\item Application: importing textual data, creating a text corpus, and adding document-level variables
+\end{itemize}
+
+\subsubsection*{Readings}
+\begin{itemize}
+\item \fullcite{benoit18}.
+\item \fullcite{wilkerson17}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{dimaggio15}.
+\item \fullcite{gilardi19}.
+\end{itemize}
+
+\section{Week 3:  Tokenisation and Document-Feature Matrix (04.03.2019)}
+
+\begin{itemize}
+\item What are tokens, types, and features?
+\item Application: tokenisation and creating a document-feature matrix
+\end{itemize}
+
+\subsubsection*{Readings}
+\begin{itemize}
+ \item \fullcite{welbers17}.
+ \item \fullcite[Chapter 3]{watanabemueller}.
+% \item \fullcite[Chapter 2 (Regular Expressions, Text Normalization, Edit Distance)]{jurafsky}.
+\end{itemize}
+ 
+  
+\section{Week 4: Dictionary Approaches and Sentiment Analysis (11.03.2019)}
+
+\begin{itemize}
+\item What are automated dictionary approaches? How can we create, test, and refine dictionaries?
+\item Application: creating multiword expressions and applying dictionaries to tokens objects and document-feature matrices
+\end{itemize}
+
+\subsubsection*{Readings}
+\begin{itemize}
+\item \fullcite{laver00}.
+\item \fullcite{rooduijn11}.
+\item \fullcite{soroka12}.
+\item \fullcite{soroka18}.
+\item \fullcite{proksch19}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{stine19}.
+\item \fullcite{rudkowsky18}.
+\item \fullcite{tausczik10}.
+%\item \fullcite{gonzalezbailon15}.
+\item \fullcite{muddiman19}.
+\item \fullcite{rauh18}.
+% \item \fullcite[Chapter 19 (Lexicons for Sentiment, Affect, and Connotation)]{jurafsky}.
+\end{itemize}
+
+\section{Week 5: Textual Statistics, Text Similarity and Text Reuse (18.03.2019)}
+
+\begin{itemize}
+\item How do texts differ in their `readability'? What are measures to estimate the similarity and distance between texts?
+\item Application: creating n-grams; estimating complexity and similarities/distances of texts
+\end{itemize}
+
+\subsubsection*{Readings}
+\begin{itemize}
+\item \fullcite{bischof18}.
+\item \fullcite{benoit19}.
+\item \fullcite{wilkerson15}.
+\item \fullcite{cross17}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{allee16}.
+\item \fullcite{linder18}.
+\end{itemize}
+
+
+\section{Week 6: Human Coding and Document Classification (25.03.2019)}
+
+\begin{itemize}
+\item How can we classify documents into known and pre-defined categories? What is crowd-sourced coding?
+\item Application: typical workflow of human coding using crowdsourcing; Naïve Bayes classification
+\end{itemize}
+
+\subsubsection*{Readings}
+\begin{itemize}
+\item \fullcite{mikhaylov12}.
+\item \fullcite{benoit16}.
+\item \fullcite[Chapter 13 (Naïve Bayes)]{manning08}.
+\item \fullcite[Chapter 4 (Naïve Bayes)]{jurafsky}.
+\item \fullcite{peterson18}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{benoit09}.
+\item \fullcite{king17}.
+\item \fullcite{hopkins10}.
+\item \fullcite{horn18}.
+\item \fullcite{diazlopez17}.
+\item \fullcite{loftis18}.
+\end{itemize}
+
+ 
+\section{Week 7:  Supervised Scaling (01.04.2019)}
+
+\begin{itemize}
+\item What are the assumptions, advantages, and problems of supervised scaling?
+\item Application: Worscores
+\end{itemize}
+
+\subsubsection*{Readings}
+\begin{itemize}
+\item \fullcite{laver03}.
+\item \fullcite{laver14}.
+\item \fullcite{baturo17}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{lowe08}.
+\item \fullcite{martin08b}.
+\item \fullcite{perry17}.
+\end{itemize}
+
+
+\section{Week 8: Unsupervised Scaling (15.04.2019)}
+
+\begin{itemize}
+\item What are differences between supervised and unsupervised scaling methods? How can we validate scaling models?
+\item Application: Wordfish and Wordshoal
+\end{itemize}
+
+\subsubsection*{Readings}
+\begin{itemize}
+\item \fullcite{slapin08}.
+\item \fullcite{lowe13}.
+\item \fullcite{schwarz17}.
+\item \fullcite{kluever09}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{greene16b}.
+\item \fullcite{baerg20}.
+\item \fullcite{storz18}.
+\end{itemize}
+
+
+\section{Week 9: Topic Models (29.04.2019)}
+
+\begin{itemize}
+\item How does are unsupervised classification work? What are the assumptions, advantages, and caveats of topic models? 
+\item Application: Latent Dirichlet allocation (LDA) and structural topic models (STM)
+\end{itemize}
+
+\subsubsection*{Readings}
+\begin{itemize}
+\item \fullcite{blei03}.
+\item \fullcite{blei12}.
+\item \fullcite{roberts14}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{boussalis16}.
+\item \fullcite{catalinac16}.
+\item \fullcite{jacobi16}.
+\end{itemize}
+
+\section{Week 10: Presentation of Projects (I) (06.05.2019)}
+
+In this session, the first half of students will present their projects. The remaining projects will be presented in the following session. Detailed instructions on the presentations, the written outline of the research design, and how to discuss each other's proposal will be distributed through OLAT.
+
+
+\section{Week 11: Presentation of Projects (II) (13.04.2019)}
+
+In this session, the second half of students will present their projects. 
+
+
+
+\section{Week 12: Social Media and Multilingual Analyses (20.05.2019)}
+
+\begin{itemize}
+\item How can we analyse social media posts with text-as-data approaches? In what ways can we conduct multilingual analyses? 
+\item Application: scraping Twitter data using an API; introducing platforms for machine translation
+\end{itemize}
+
+\subsubsection*{Readings: Social Media}
+\begin{itemize}
+\item \fullcite{mitts19}.
+\item \fullcite{pfeffer18}.
+\end{itemize}
+
+\subsubsection*{Readings: Machine Translation}
+\begin{itemize}
+\item \fullcite{evans16}.
+\item \fullcite{lucas15}.
+\item \fullcite{devries18}.
+\end{itemize}
+
+
+\section{Week 13: Beyond Bag-of-Words (27.05.2019)}
+
+
+\begin{itemize}
+\item What are future directions in natural language processing?
+\item Application: introducing assumptions of word2vec and deep learning approaches
+\end{itemize}
+
+\subsubsection*{Readings}
+\begin{itemize}
+\item \fullcite{lecun15}.
+\item \fullcite{mikolov13}.
+\item \fullcite{joo}.
+\end{itemize}
+
+\subsubsection*{Optional}
+
+\begin{itemize}
+\item \fullcite{chollet18}.
+\item \fullcite{salganik18}.
+\end{itemize}
+
+
+
+\sloppy
+\renewcommand*{\bibfont}{\small}
+
+\setlength{\bibitemsep}{0.2em} % increase space between references
+\printbibliography
+
+\bigskip
+
+\begin{center}
+Last updated: \today
+\end{center}
+
+\end{document}
+
+
