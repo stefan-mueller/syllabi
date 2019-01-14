@@ -15,17 +15,21 @@
 \usepackage[parfill]{parskip}
 \usepackage{url}
 \urlstyle{sf}
-\usepackage{titlesec}
+%usepackage{titlesec}
 \usepackage{marvosym}
+
+\input{mueller_bib_custom.tex}
+
+\bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
 
 \setcounter{secnumdepth}{0}
 
 
-\input{mueller_bib_custom.tex}
-
-\bibliography{/Users/stefan/GitHub/phd-thesis/mueller-library/muellerlibrary.bib}
-
-
+\usepackage{titlesec}
+\titleformat{\subsubsection}
+   {\normalfont\normalsize\itshape}{\thesubsubsection}{1em}{}
+   
+   
 \usepackage{xcolor}
 \definecolor{JournalBlue}{RGB}{0, 12, 146}
 %https://en.wikibooks.org/wiki/LaTeX/Colors
@@ -38,17 +42,18 @@
 
 \setlength\parindent{0pt}
 
+
 \begin{document}
 	
 \singlespacing
 
 \noindent
 \adjustbox{valign=t}{\begin{minipage}{0.38\textwidth}% adapt widths of minipages to your needs
-\includegraphics[width=\linewidth]{/uzh_logo_de}
+\includegraphics[width=\linewidth]{pictures/uzh_logo_de}
 \end{minipage}}%
 \hfill%
 \adjustbox{valign=t}{\begin{minipage}{0.62\textwidth}\raggedleft
-{\footnotesize
+{%\footnotesize
 \textbf{Stefan Müller} \\
 Assistent \\
 Lehrstuhl für Policy-Analyse \\
@@ -66,7 +71,9 @@ Universität Zürich \\
 \medskip
 {\Large \textbf{Repräsentation, Parteienwettbewerb und Policy-Analyse}} \\
 \bigskip
-{\large  \textcolor{red}{Entwurf (letzte Aktualisierung: \today)}}
+{\large  Entwurf (letzte Aktualisierung: \today)}
+
+Neueste Version: \url{https://muellerstefan.net/teaching/2019-spring-rpp.pdf}
 \end{center}
 
 \vspace{1.5cm}
@@ -110,10 +117,12 @@ Inwiefern unterscheiden sich Parteien inhaltlich? Erfüllen Parteien ihre Wahlve
 \section*{Einführende Literatur}
 
 \begin{itemize}
-\item \fullcite{knill15}
-\item \fullcite{gallagher11}
-\item \fullcite{soroka10}
-\item \fullcite{volkens13}
+\item \fullcite{powell00}.
+\item \fullcite{knill15}.
+\item \fullcite{gallagher11}.
+\item \fullcite{soroka10}.
+\item \fullcite{dalton11}.
+\item \fullcite{volkens13}.
 \end{itemize}
 
 \section*{Lernziele}
@@ -125,7 +134,7 @@ Inwiefern unterscheiden sich Parteien inhaltlich? Erfüllen Parteien ihre Wahlve
 \item Konzeption und Durchführung einer kritischen Stellungnahme und eines ausführlichen Literaturberichts
 \end{enumerate}
 
-\section*{Ewartungen}
+\section*{Erwartungen}
 
 \begin{itemize}
 \item Das \textbf{Impulsreferat} (10\%) \dots
@@ -135,95 +144,232 @@ Inwiefern unterscheiden sich Parteien inhaltlich? Erfüllen Parteien ihre Wahlve
 
 \tableofcontents
 
+\section{I. Einführung und Überblick}
 
-\section{1. Repräsentation}
 
-\subsection{Die Mandatstheorie und Wahlversprechen}
-
-\begin{itemize}
-\item \fullcite{manin99}
-\item \fullcite{mansbridge03}
-\item \fullcite{royed96}
-\item \fullcite{thomson17}
-\end{itemize}
+\subsection{1. Woche: Organisatorisches und Aufbau des Moduls}
 
 \begin{itemize}
-\item \fullcite{horn17}
-\end{itemize}
-
-\subsection{Conditional Representation}
-
-canes-wrone 15 table 1 (electoral cycle, salience)
-
-\begin{itemize}
-\item \fullcite{budge15}
+\item Erwartungen
+\item Besprechung des Syllabus
+\item Hinweise zu Referate und der Anfertigung von schriftlichen Arbeiten
 \end{itemize}
 
 
-\subsection{Kongruenz}
-
+\subsubsection*{Pflichtlektüre}
 \begin{itemize}
-\item \fullcite{caneswrone15}
-\item \fullcite{spoon14}
-\item \fullcite{kluever16}
-\item \fullcite{powell00}
-\item \fullcite{powell09}
-\end{itemize}
-
-\subsection{Responsivität}
-
-\textbf{Mandatory}
-\begin{itemize}
-\item \fullcite{wlezien95}
-\item \fullcite{stimson95}
-\item \fullcite{powell04b}
-\item \fullcite{eulau77}
-\end{itemize}
-
-
-\section{2. Parteienwettbeweb}
-
-\subsection{Parteienwettbewerb}
-
-\begin{itemize}
-\item \fullcite{wagner14}
-\end{itemize}
-
-
-\subsection{Parteipositionen}
-
-\begin{itemize}
-\item \fullcite{laver14}
-\item \fullcite{hjorth15}
-\item \fullcite{laver03}
+\item \fullcite[Kapitel 1]{clarke18}.
+\item \fullcite{best11}.
+\item \fullcite{manin99}.
 \end{itemize}
 
 
 
-\textbf{Optional}
+\subsection{2. Woche: Überblick}
+
 \begin{itemize}
-\item \fullcite{kostadinova19}
+\item Wie hängen Repräsentation, Parteienwettbewerb und Policy-Analyse zusammen?
+\item Was sind die wichtigsten Theorien?
+\end{itemize}
+
+
+\subsubsection*{Pflichtlektüre}
+\begin{itemize}
+\item \fullcite[Kapitel 1]{dalton11}.
+\item \fullcite[Kapitel 1--2]{powell00}.
+\end{itemize}
+
+
+\section{II. Repräsentation}
+
+\subsection{3. Woche: Die Mandatstheorie und Wahlversprechen}
+
+\subsubsection*{Pflichtlektüre}
+\begin{itemize}
+\item \fullcite{mansbridge03}.
+\item \fullcite{thomson17}.
+\end{itemize}
+
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{royed96}.
+\item \fullcite{brouard18}.
+\end{itemize}
+
+
+\subsection{4. Die Messung der Öffentlichen Meinung}
+
+\subsubsection*{Pflichtlektüre}
+\begin{itemize}
+\item \fullcite{berinsky17}.
+\item \fullcite{bowler17}.
+\end{itemize}
+
+
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{chong07b}.
+\end{itemize}
+
+
+%\subsection{4. Woche: Conditional Representation}
+%
+%canes-wrone 15 table 1 (electoral cycle, salience)
+
+%\subsubsection*{Pflichtlektüre}
+%\begin{itemize}
+%\item \fullcite{budge15}.
+%\item \fullcite{horn17}.
+%\end{itemize}
+
+
+
+\subsection{5. Verantwortbarkeit und die Kosten des Regierens}
+
+\subsubsection*{Pflichtlektüre}
+\begin{itemize}
+\item \fullcite[Kapitel 5]{achen16}.
+\item \fullcite{fowler18}.
+\item \fullcite{healy13}.
+\end{itemize}
+
+
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{sances17}.
+\item \fullcite{reif80}.
+\item \fullcite{muellerlouwerse}.
+\end{itemize}
+
+
+\subsection{6. Woche: Responsivität}
+
+\subsubsection*{Pflichtlektüre}
+\begin{itemize}
+\item \fullcite{eulau77}.
+\item \fullcite{wlezien95}.
+\item \fullcite{powell04b}.
+\end{itemize}
+
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{page83}.
+\item \fullcite{stimson95}.
+\item \fullcite{kluever16}.
+%\item \fullcite{soroka10}.
 \end{itemize}
 
 
 
-\section{3. Policy-Analyse}
+\section{III. Parteienwettbeweb}
 
-\subsection{Diffusion}
 
+
+\subsection{7. Woche: Die Messung von Parteipositionen}
+
+\subsubsection*{Pflichtlektüre}
 \begin{itemize}
-\item \fullcite{graham13}
-\item \fullcite{gilardi16} 
-\item \fullcite{boehmelt16}
+\item \fullcite{laver14}.
+\item \fullcite{hjorth15}.
+\item \fullcite{mikhaylov12}.
+\end{itemize}
+
+
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{laver00}.
+\item \fullcite{budge13}.
+\item \fullcite{benoit16}.
+\item \fullcite{lowe11}.
+\end{itemize}
+
+
+
+\subsection{8. Woche: Parteienwettbewerb}
+
+\subsubsection*{Pflichtlektüre}
+\begin{itemize}
+\item \fullcite{stokes63}.
+%\item \fullcite{adams05}.
+\end{itemize}
+
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{greenpedersen07}.
+\item \fullcite{wagner14}.
+\item \fullcite{spoon15}.
+\end{itemize}
+
+
+\subsection{9. Woche: Salienz und Kongruenz}
+
+\subsubsection*{Pflichtlektüre}
+\begin{itemize}
+\item \fullcite{budge15}.
+\item \fullcite{caneswrone15}.
+%\item \fullcite{spoon14}.
+\item \fullcite[Kapitel ?]{powell00}.
+\end{itemize}
+
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{powell09}.
+\item \fullcite{kluever16}.
+\item \fullcite{horn17}.
+\end{itemize}
+
+
+\subsection{10. Änderungen von Parteipositionen}
+
+\subsubsection*{Pflichtlektüre}
+\begin{itemize}
+%\item \fullcite[Kapitel 1--2]{soroka10}.
+\item \fullcite{boehmelt16}.
+\item \fullcite{wolkenstein}.
+\item \fullcite{bischof19}.
+\end{itemize}
+
+
+
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{adams09}.
+\item \fullcite{adams11}.
+\item \fullcite{schumacher15}.
+\item \fullcite{abouchadi20}.
+\end{itemize}
+
+
+
+\section{IV. Policy-Analyse}
+
+\subsection{11. Der Policy-Prozess}
+
+\subsubsection*{Pflichtlektüre}
+\begin{itemize}
+\item \fullcite[Kapitel 1--2]{knill15}.
 \end{itemize}
  
-\subsection{Der Einfluss von Public Opinion auf öffentliche Politiken}
 
+
+\subsection{12. Policy-Diffusion}
+
+\subsubsection*{Pflichtlektüre}
 \begin{itemize}
-\item \fullcite{page83}
-\item \fullcite{kluever16}
-\item \fullcite{soroka10}
+\item \fullcite{graham13}.
+\item \fullcite{gilardi16}.
+\item \fullcite{elkins05}.
 \end{itemize}
+ 
+ 
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{brooks07b}.
+ \item \fullcite{gilardi10}.
+\end{itemize}
+
+ 
+
 
 \sloppy
 \renewcommand*{\bibfont}{\small}
