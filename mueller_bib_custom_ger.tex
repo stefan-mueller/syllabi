@@ -1,0 +1,140 @@
+%\deffootnote[10pt]{10pt}{10pt}{\makebox[15pt][l]{\thefootnotemark\hspace{10pt}}}
+
+% Use authoryear-comp to create: (Müller 2015, 2016) instead of (Müller 2015; Müller 2016)
+
+% posscite function
+
+\usepackage[style=authoryear-comp,
+    maxcitenames=99,
+    maxbibnames=99,
+    doi=false,
+    %sorting=ynt,
+    firstinits=false,
+    isbn=false,
+    date=short,
+    dashed=false,
+    url=false,
+    sortcites=false,
+    backend=bibtex]{biblatex}
+
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+
+
+\DeclareNameFormat{labelname:poss}{% Based on labelname from biblatex.def
+  \nameparts{#1}% Not needed if using Biblatex 3.4
+  \ifcase\value{uniquename}%
+    \usebibmacro{name:family}{\namepartfamily}{\namepartgiven}{\namepartprefix}{\namepartsuffix}%
+  \or
+    \ifuseprefix
+      {\usebibmacro{name:first-last}{\namepartfamily}{\namepartgiveni}{\namepartprefix}{\namepartsuffixi}}
+      {\usebibmacro{name:first-last}{\namepartfamily}{\namepartgiveni}{\namepartprefixi}{\namepartsuffixi}}%
+  \or
+    \usebibmacro{name:first-last}{\namepartfamily}{\namepartgiven}{\namepartprefix}{\namepartsuffix}%
+  \fi
+  \usebibmacro{name:andothers}%
+  \ifnumequal{\value{listcount}}{\value{liststop}}{'s}{}}
+\DeclareFieldFormat{shorthand:poss}{%
+  \ifnameundef{labelname}{#1's}{#1}}
+\DeclareFieldFormat{citetitle:poss}{\mkbibemph{#1}'s}
+\DeclareFieldFormat{label:poss}{#1's}
+\newrobustcmd*{\posscitealias}{%
+  \AtNextCite{%
+    \DeclareNameAlias{labelname}{labelname:poss}%
+    \DeclareFieldAlias{shorthand}{shorthand:poss}%
+    \DeclareFieldAlias{citetitle}{citetitle:poss}%
+    \DeclareFieldAlias{label}{label:poss}}}
+\newrobustcmd*{\posscite}{%
+  \posscitealias%
+  \textcite}
+\newrobustcmd*{\Posscite}{\bibsentence\posscite}
+\newrobustcmd*{\posscites}{%
+  \posscitealias%
+  \textcites}
+
+\renewbibmacro{in:}{} % no "in" before article
+
+\renewcommand*{\bibpagespunct}{\addcomma\space} % ":" instead of pp
+\DeclareFieldFormat{pages}{#1}
+
+% Colon after title
+\renewcommand{\subtitlepunct}{\addcolon\addspace }
+
+% Colon instead of pp in references
+\renewcommand*{\bibpagespunct}{\addcolon\space}
+\DeclareFieldFormat{pages}{#1}
+
+% Colon after name in text
+\renewcommand*{\postnotedelim}{\addcolon\space}
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+
+% Remove brackets around year in bibliography
+\usepackage{xpatch,filecontents}
+
+\xpatchbibmacro{date+extrayear}{%
+  \printtext[parens]%
+}{%
+  \setunit*{\addperiod\space}%
+  \printtext%
+}{}{}
+
+% Supresses URL accessed day
+\AtEveryBibitem{%
+  \ifentrytype{electronic}
+    {}
+    {\clearfield{urlyear}\clearfield{urlmonth}\clearfield{urlday}}}
+%\DefineBibliographyStrings{english}{%
+%urlseen = {Accessed},}
+
+\renewbibmacro*{volume+number+eid}{% number of journal in brackets
+ \printfield{volume}%
+  %\setunit*{\adddot}% DELETED
+  \setunit*{\addnbthinspace}% NEW (optional); there's also \addnbthinspace
+  \printfield{number}%
+  \setunit{\addcomma\space}%
+  \printfield{eid}}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+
+
+
+% Change edition field
+
+\DeclareFieldFormat{edition}%
+                   {\ifinteger{#1}%
+                    {\mkbibordedition{#1}\addthinspace{}Auflage}%
+                    {#1\isdot}}
+
+% New command to show doi, or url or isbn or issn field
+% http://tex.stackexchange.com/questions/48400/biblatex-make-title-hyperlink-to-dois-url-or-isbn
+\newbibmacro{string+doiurlisbn}[1]{%
+  \iffieldundef{doi}{%
+    \iffieldundef{url}{%
+      \iffieldundef{isbn}{%
+        \iffieldundef{issn}{%
+          #1%
+        }{%
+          \href{http://books.google.com/books?vid=ISSN\thefield{issn}}{#1}%
+        }%
+      }{%
+        \href{http://books.google.com/books?vid=ISBN\thefield{isbn}}{#1}%
+      }%
+    }{%
+      \href{\thefield{url}}{#1}%
+    }%
+  }{%
+    \href{http://dx.doi.org/\thefield{doi}}{#1}%
+  }%
+}
+
+% Necessary to remove dot after question mark in title
+%\newcommand{\killpunct}[1]{}    
+
+% Make full stop after title and before quotation marks in title field
+\DeclareFieldFormat{title}{\usebibmacro{string+doiurlisbn}{\mkbibemph{#1}}}
+\DeclareFieldFormat[article,incollection,unpublished,phdthesis]{title}%
+    {\usebibmacro{string+doiurlisbn}{\mkbibquote{#1}}}
+   % {\usebibmacro{string+doiurlisbn}{\mkbibquote{#1.\isdot}}}
+
+\renewcommand*{\newunitpunct}{.\space}
