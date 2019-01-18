@@ -17,7 +17,10 @@
 %usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage{booktabs}
+\usepackage{comment}
+\usepackage{tocloft}
 
+  
 \input{mueller_bib_custom_ger.tex}
 
 \bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
@@ -47,6 +50,7 @@
 \begin{document}
 	
 \singlespacing
+
 
 \noindent
 \adjustbox{valign=t}{\begin{minipage}{0.38\textwidth}% adapt widths of minipages to your needs
@@ -84,16 +88,16 @@ Neueste Version: \url{https://muellerstefan.net/teaching/2019-spring-rpp.pdf}
 % first column
 \begin{minipage}[t]{0.5\textwidth}
 Semester: Frühjahrssemester 2019 \\
-Zeit: Mittwoch, 10:15--12:00 \\
-Veranstaltungsraum: \\
+Zeit: Mittwoch, 10.15--12.00 \\
+Veranstaltungsraum:  \textbf{NA}\\
 ECTS: 6.0
 \end{minipage}
 %second column
 \begin{minipage}[t]{0.5\textwidth}
 \begin{flushright}
 Dozent: Stefan Müller \\
-Raum: \\
-Sprechstunde: \\
+Raum: AFL H 349\\
+Sprechstunde: Dienstag, 16.00--17.00 \\
 E-Mail: \textsf{\href{mailto:mueller@ipz.uzh.ch}{mueller@ipz.uzh.ch}}
 \end{flushright}
 \end{minipage}
@@ -103,7 +107,7 @@ E-Mail: \textsf{\href{mailto:mueller@ipz.uzh.ch}{mueller@ipz.uzh.ch}}
 
 \section*{Kursbeschreibung}
 
-Inwiefern unterscheiden sich Parteien inhaltlich? Erfüllen Parteien ihre Wahlversprechen? Unter welchen Umständen reagieren PolitikerInnen auf Änderungen in der öffentlichen Meinung? Und lernen Parteien voneinander? Antworten auf diese Fragen sind unverzichtbar, um gegenwärtige politische Debatten verstehen und einordnen zu können. Dieser Kurs ermöglicht einen systematischen Einblick in die wissenschaftliche Literatur über den Parteienwettbewerb, Repräsentationsfunktionen und öffentliche Politiken. Zu Beginn des Seminars werden zentrale Begriffe wie Repräsentation, Responsivität, Parteienwettbewerb, Wahlversprechen und Diffusion definiert und verknüpft. Daraufhin werden die Beziehungen zwischen Parteien und WählerInnen in den Blick genommen, ehe wir uns der Frage widmen, inwieweit Parteipositionen und konkrete Politiken von Diffusionsprozessen und Umfrageergebnissen beeinflusst werden. Ausserdem werden wir untersuchen, wie bestehende Studien diese Begriffe konzeptualisieren und welche Schwierigkeiten sich bei der Messung derart vielschichtiger Konzepte ergeben können.
+Inwiefern unterscheiden sich Parteien inhaltlich? Erfüllen Parteien ihre Wahlversprechen? Unter welchen Umständen reagieren PolitikerInnen auf Änderungen in der öffentlichen Meinung? Und lernen Parteien voneinander? Antworten auf diese Fragen sind unverzichtbar, um gegenwärtige politische Debatten verstehen und einordnen zu können. Dieser Kurs ermöglicht einen systematischen Einblick in die wissenschaftliche Literatur über den Parteienwettbewerb, Repräsentationsfunktionen und »Public Policies«. Zu Beginn des Seminars werden zentrale Begriffe wie Repräsentation, Responsivität, Parteienwettbewerb, Wahlversprechen und Diffusion definiert und verknüpft. Daraufhin werden die Beziehungen zwischen Parteien und WählerInnen in den Blick genommen, ehe wir uns der Frage widmen, inwieweit Parteipositionen und konkrete Politiken von Diffusionsprozessen und Umfrageergebnissen beeinflusst werden. Ausserdem werden wir untersuchen, wie bestehende Studien diese Begriffe konzeptualisieren und welche Schwierigkeiten sich bei der Messung derart vielschichtiger Konzepte ergeben können.
 
 \subsection*{Details}
 
@@ -130,20 +134,22 @@ Inwiefern unterscheiden sich Parteien inhaltlich? Erfüllen Parteien ihre Wahlve
 
 \begin{enumerate}
 \item Vertiefung der Kenntnisse von zentralen theoretischen Aspekten der Parteien- und Policy-Forschung
-\item Detaillierte Kenntnisse von aktuellen wissenschaftlichen Debatten über Repräsentation, Parteienwettbewerb, Responsivität und öffentliche Politiken
+\item Detaillierte Kenntnisse von aktuellen wissenschaftlichen Debatten über Repräsentation, Parteienwettbewerb, Responsivität und »Public Policy«
 \item  Kritisches Lesen, Diskutieren und Aneignen der Inhalte komplexer Fachliteratur und diverser methodischer Vorgehensweisen
 \item Konzeption und Durchführung einer kritischen Stellungnahme und eines ausführlichen Literaturberichts
 \end{enumerate}
 
 \section*{Erwartungen}
 
+Der Kurs beinhaltet drei Prüfungsleistungen: ein Impulsreferat, eine kritische Stellungnahme und einen ausführlichen Literaturbericht. Die  Prüfungsleistungen bauen aufeinander auf und bereiten die Studierenden auf den Literaturbericht vor. 
+
 \begin{itemize}
-\item Die Studierenden halten ein kurzes \textbf{Impulsreferat} (10\%)  über einen der optionalen Texte, die auf dem Syllabus angegeben sind. Die Verteilung der Referatstexte erfolgt in der zweiten Sitzung. Das Referat soll den Aufsatz oder das Buchkapitel \textit{prägnant und kritisch} (!) bewerten. Meist bauen die Text auf der Pflichtlektüre auf, deren Inhalte \textit{nicht} im Referat wiedergegeben werden sollen. Der Inhalt des gelesen Texts soll kurz wiedergegeben werden. Der Schwepunkt jedoch soll auf einer \textit{kritischen} Einordnung liegen.  Studierende können bis zu vier PowerPoint- oder LaTeX-Slides nutzen, die zur visuellen Unterstützung dienen können. Fals Slides genutzt werden, müssen diese bis 24 Stunden vor Seminarbeginn an \href{mailto:mueller@ipz.uzh.ch}{mueller@ipz.uzh.ch} geschickt werden. 
+\item Die Studierenden halten ein 8-minütiges \textbf{Impulsreferat} (10\%)  über einen der optionalen Texte, die auf dem Syllabus angegeben sind. Die Verteilung der Referatstexte erfolgt nach der zweiten Sitzung über \href{https://lms.uzh.ch/url/RepositoryEntry/16539681116?guest=true&lang=en}{OLAT}. Das Referat soll den Aufsatz oder das Buchkapitel \textit{prägnant und kritisch} (!) bewerten. Meist bauen die Texte auf der Pflichtlektüre auf, deren Inhalte \textit{nicht} im Referat wiedergegeben werden sollen. Der Inhalt des gelesen Texts soll kurz wiedergegeben werden. Der Schwerpunkt  soll jedoch auf einer \textit{kritischen} Einordnung liegen.  Studierende können bis zu vier PowerPoint- oder LaTeX-Slides nutzen, die zur visuellen Unterstützung dienen können. Fals Slides genutzt werden, müssen diese bis 24 Stunden vor Seminarbeginn an \href{mailto:mueller@ipz.uzh.ch}{mueller@ipz.uzh.ch} geschickt werden. 
 
-\item In der \textbf{kritische Stellungnahme} (20\%) diskutieren Studierende ein Papier aus einem englischsprachigen Fachjournal. Der Abgabetermin ist Mittwoch, der \textbf{17. April 2019 um 20:00 Uhr}.   Der Aufbau soll sich hierbei an dem Peer-Review-Prozess orientieren, den wissenschaftliche Papiere vor der Veröffentlichung durchlaufen. Praktische Beispiele werden in den ersten drei Sitzungen präsentiert. Die Stellungnahme umfasst 1000--1200 Wörter und  muss die folgenden Punkte beinhalten: Stärken, Logik, Argumentationsschwächen, Methoden. Studierende sollen selbstständig nach einem passenden Papier suchen, das nicht Teil des Syllabus ist, sich jedoch  mit den Kursinhalten deckt. Der Vorschlag muss mir bis spätestens zum \textbf{29. März 2019}  per E-Mail geschickt werden (\href{mailto:mueller@ipz.uzh.ch}{mueller@ipz.uzh.ch}). Daraufhin werde ich entscheiden, ob das entsprechende Papier besprochen werden kann. Stellungnahmen, die ohne meine vorherige Einwilligung verfasst wurden, werden nicht akzeptiert. 
+\item In der \textbf{kritische Stellungnahme} (20\%) diskutieren Studierende ein Papier aus einem englischsprachigen Fachjournal. Der Abgabetermin ist Mittwoch, der \textbf{17. April 2019 um 20:00 Uhr}.   Der Aufbau soll sich hierbei an dem Peer-Review-Prozess orientieren, den wissenschaftliche Papiere vor der Veröffentlichung durchlaufen.\footnote{Informationen und Empfehlungen zum Peer-Review-Prozess in der Politikwissenschaft finden sich in einem Special Issue der Zeitschrift \textit{The Political Methodologist}  (Jg. 23, Nr. 1): \url{https://bit.ly/2CuPha0}.} Praktische Beispiele werden in den ersten drei Sitzungen präsentiert. Die Stellungnahme umfasst 800 Wörter und  muss die folgenden Punkte beinhalten: Stärken, Logik, Argumentationsschwächen, Methoden. Studierende sollen selbstständig nach einem passenden Papier suchen, das nicht Teil des Syllabus ist, sich jedoch  mit den Kursinhalten deckt. Der Vorschlag muss mir bis spätestens zum \textbf{29. März 2019}  per E-Mail geschickt werden (\href{mailto:mueller@ipz.uzh.ch}{mueller@ipz.uzh.ch}). Daraufhin werde ich entscheiden, ob das entsprechende Papier besprochen werden kann. Stellungnahmen, die ohne meine vorherige Einwilligung verfasst wurden, werden nicht akzeptiert. 
 
 
-\item Der \textbf{ausführliche Literaturbericht} (70\%) diskutiert die Literatur über ein Unterthema des Kurses. Der Abgabetermin ist Freitag, der \textbf{7. Juni 2019 um 20:00 Uhr}.  Das Ziel des Literaturberichts ist es \textit{nicht}, die vorhandenen Forschungsergebnisse separat  zusammenzufassen. Stattdessen soll die bisherige Evidenz verglichen,  Querverbindungen zwischen Texten hergestellt und Forschungslücken identifiziert werden. Der Literaturbericht umfasst 3,500--3,800 Wörter (das Literaturverzeichnis ist  nicht Teil dieser Wortanzahl). Bis zum \textbf{10. Mai 2019} müssen die Studierenden mir einen Vorschlag per E-Mail schicken (\href{mailto:mueller@ipz.uzh.ch}{mueller@ipz.uzh.ch}), in dem das Thema des Literaturberichts in einem Satz zusammengefasst wird. Es wird erwartet, dass Studierende in ihrer Recherche weit über die Literatur des Kurses herausgehen. Exzellente Beispiele für Literaturberichte finden sich in den \textit{Annual Reviews of Political Science}: \url{http://www.annualreviews.org/journal/polisci}.
+\item Der \textbf{ausführliche Literaturbericht} (70\%) diskutiert die Literatur über ein Unterthema des Kurses. Der Abgabetermin ist Freitag, der \textbf{7. Juni 2019 um 20:00 Uhr}.  Das Ziel des Literaturberichts ist es \textit{nicht}, die vorhandenen Forschungsergebnisse separat  zusammenzufassen. Stattdessen soll die bisherige Evidenz verglichen,  Querverbindungen zwischen Texten hergestellt und Forschungslücken identifiziert werden. Der Literaturbericht umfasst 2800--3000 Wörter (das Literaturverzeichnis ist  nicht Teil dieser Wortanzahl). Bis zum \textbf{10. Mai 2019} müssen die Studierenden mir einen Vorschlag per E-Mail schicken (\href{mailto:mueller@ipz.uzh.ch}{mueller@ipz.uzh.ch}), in dem das Thema des Literaturberichts in einem Satz zusammengefasst wird. Es wird erwartet, dass Studierende in ihrer Recherche weit über die Literatur des Kurses herausgehen. Exzellente Beispiele für Literaturberichte finden sich in den \textit{Annual Reviews of Political Science}: \url{http://www.annualreviews.org/journal/polisci}.
 
 
 \end{itemize}
@@ -163,8 +169,11 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 \end{tabular}
 \end{table}
 
+\section*{Modifikation des Syllabus}
 
+Ich behalte mir vor, den Syllabus während des Semester leicht anzpassen. Dies geschieht allerdings nur, um den Kurs and die Vorkenntnisse der Studierenden anzupassen oder um weitere relevante Literatur zu berücksichtigen. Dabei wird sich der Leseaufwand nicht massgeblich vergrössern. Änderungen im Syllabus werden zeitnah via \href{https://lms.uzh.ch/url/RepositoryEntry/16539681116?guest=true&lang=en}{OLAT} mitgeteilt. 
 
+\renewcommand{\cftdot}{} %empty {} for no dots. you can have any symbol inside. For example put {\ensuremath{\ast}} and see what happens.
 \tableofcontents
 
 \section{I. Einführung und Überblick}
@@ -172,28 +181,31 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 
 \subsection{1. Woche: Organisatorisches und Aufbau des Moduls (20.02.)}
 
-%\begin{itemize}
-%\item Erwartungen
-%\item Besprechung des Syllabus
-%\item Hinweise zu Referaten und der Anfertigung von schriftlichen Arbeiten
-%\end{itemize}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Erwartungen
+\item Besprechung des Syllabus
+\item Hinweise zu Referaten, der Anfertigung von schriftlichen Arbeiten und dem Aufbau einer Stellungnahme
+\end{itemize}
 
-
+\begin{comment}
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
 \item \fullcite[Kapitel 1]{clarke18}.
 %\item \fullcite{best11}.
 \item \fullcite{manin99}.
 \end{itemize}
+\end{comment}
 
 
 
 \subsection{2. Woche: Überblick  und Definitionen (27.02.)}
 
-%\begin{itemize}
-%\item Wie hängen Repräsentation, Parteienwettbewerb und Policy-Analyse zusammen?
-%\item Was sind die wichtigsten Theorien?
-%\end{itemize}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Wie hängen Repräsentation, Parteienwettbewerb und Policy-Analyse zusammen?
+\item Was sind die wichtigsten Theorien in diesen Bereichen?
+\end{itemize}
 
 
 \subsubsection*{Pflichtlektüre}
@@ -207,20 +219,36 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 
 \subsection{3. Woche: Die Mandatstheorie und Wahlversprechen (06.03.)}
 
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Was versteht man unter dem »demokratischen Mandat«?
+\item Wie lassen sich Wahlversprechen messen?
+\item Erfüllen Parteien ihre Wahlversprechen?
+\end{itemize}
+
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
-\item \fullcite{mansbridge03}.
+\item \fullcite{manin99}.
 \item \fullcite{thomson17}.
 \end{itemize}
 
 \subsubsection*{Optional/Referate}
 \begin{itemize}
+\item \fullcite{mansbridge03}.
 \item \fullcite{royed96}.
 \item \fullcite{brouard18}.
 \end{itemize}
 
 
 \subsection{4. Die Messung der Öffentlichen Meinung (13.03.)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Wie lässt sich die Öffentliche Meinung messen?
+\item Was sind Vor- und Nachteile verschiedener Umfrageinstrumente?
+\item Wie unterstützen oder beeinflussen Umfragen die Verbindung zwischen BürgerInnen und RepräsentantInnen?
+\end{itemize}
+
 
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
@@ -249,16 +277,23 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 
 \subsection{5. Verantwortbarkeit und die Kosten des Regierens (20.03.)}
 
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Was verstehen wir unter Verantwortbarkeit (»Accountability«)?
+\item Wieso verlieren Regierungsparteien oftmals öffentliche Zustimmmung in der folgenden Wahl?
+\end{itemize}
+
 \subsubsection*{Pflichtlektüre}
+
 \begin{itemize}
 \item \fullcite[Kapitel 5]{achen16}.
-\item \fullcite{fowler18}.
 \item \fullcite{healy13}.
 \end{itemize}
 
 
 \subsubsection*{Optional/Referate}
 \begin{itemize}
+\item \fullcite{fowler18}.
 \item \fullcite{sances17}.
 \item \fullcite{reif80}.
 \item \fullcite{muellerlouwerse}.
@@ -266,6 +301,12 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 
 
 \subsection{6. Woche: Responsivität (27.03.)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Was sind Unterschiede zwischen Verantwortbarkeit und Responsivität? 
+\item Reagieren PolitikerInnen und Parteien auf Änderungen der öffentlichen Meinung?
+\end{itemize}
 
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
@@ -288,7 +329,20 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 
 
 
-\subsection{7. Woche: Die Messung von Parteipositionen (03.04.)}
+\subsection{7. Woche:  Sitzung entfällt! (03.04.)}
+
+
+Diese Sitzung entfällt wegen meiner Teilnahme an der \href{https://www.mpsanet.org/conference}{jährlichen Konferenz der  Midwest Political Science Association} in Chicago.
+Stattdessen werden wir die Sitzungen in den Wochen 8 und 9 eine halbe Stunde früher  um 9:45 Uhr beginnen. 
+
+\subsection{8. Woche: Die Messung von Parteipositionen (11.04.)}
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Wie lassen sich die Positionen von politischen Partien messen?
+\item Welche methodologischen Schwierigkeiten ergeben sich bei der klassischen Messung von Parteipositionen? Was sind alternative Vorgehensweisen?
+\end{itemize}
 
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
@@ -306,10 +360,14 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 \item \fullcite{lowe11}.
 \end{itemize}
 
-\subsection{8. Woche: Sitzung entfällt wegen Konferenz!}
-
 
 \subsection{9. Woche: Parteienwettbewerb (17.04.)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Welche Ziele verfolgen KandidatInnen und Parteien?
+\item Wie konkurrieren Parteien untereinander? 
+\end{itemize}
 
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
@@ -327,6 +385,13 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 
 
 \subsection{10. Woche: Salienz und Kongruenz (08.05.)}
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Was verstehen wir unter Salienz?
+\item Wie lässt sich die Kongruenz zwischen Parteien und BürgerInnen messen? Und wie ähnlich ist diese Beziehung?
+\end{itemize}
 
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
@@ -347,6 +412,13 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 
 
 \subsection{11. Änderungen von Parteipositionen (15.05.)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Wann ändern Parteien ideologische Positionen?
+\item Wie beeinflussen neue Parteien die Positionen der etablierten Parteien?
+\end{itemize}
+
 
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
@@ -372,27 +444,56 @@ Freitag, 7. Juni 2019 & 20:00 Uhr & Einreichung des ausführlichen Literaturberi
 
 \subsection{12. Der Policy-Prozess (22.05.)}
 
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Wie beeinflussen ideologische Positionen konkrete Politiken?
+\item Was verstehen wir unter dem Policy-Zyklus und lässt sich dieses Modell auf die Realität anwenden?
+\end{itemize}
+
+
+
+
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
 \item \fullcite[Kapitel 1--2]{knill15}.
 \end{itemize}
  
+ 
+ 
+\subsubsection*{Optional/Referate}
+\begin{itemize}
+\item \fullcite{gormley07}.
+\item \fullcite{campbell12}.
+\item \fullcite{carlson11}.
+\end{itemize}
 
 
 \subsection{13. Policy-Diffusion (29.05.)}
 
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Wie wandeln sich Policies im Laufe der Zeit?
+\item Warum erweisen sich viele Policies als stabil, während sich andere Policies oftmals ändern?
+\end{itemize}
+
+
+
+
 \subsubsection*{Pflichtlektüre}
 \begin{itemize}
 \item \fullcite{graham13}.
-\item \fullcite{gilardi16}.
-\item \fullcite{elkins05}.
+\item \fullcite{gilardi18}.
 \end{itemize}
  
  
 \subsubsection*{Optional/Referate}
 \begin{itemize}
+\item \fullcite{elkins05}.
 \item \fullcite{brooks07b}.
  \item \fullcite{gilardi10}.
+ \item \fullcite{gilardi16}.
 \end{itemize}
 
  
