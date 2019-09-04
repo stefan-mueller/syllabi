@@ -13,6 +13,7 @@
 \usepackage{caption}
 \usepackage{booktabs}
 \usepackage{url}
+\usepackage{comment}
 \urlstyle{sf}
 \usepackage{lmodern}
 \usepackage[parfill]{parskip}
@@ -50,8 +51,8 @@
 
 \usepackage{titlesec}
 \titleformat{\section}
-   {\normalfont\Large\bfseries}{\thesection}{1em}{}
-   
+   {\normalfont\LARGE\bfseries}{\thesection}{1em}{}
+
    
 
 \begin{document}
@@ -82,7 +83,7 @@ University of Zurich \\
 {\large Spezialisierung \href{https://studentservices.uzh.ch/uzh/anonym/vvz/index.html#/details/2019/003/E/50950937}{615a006a}: Autumn Term 2019} \\ 
 \bigskip
 
-{\Large \textbf{Party Competition, Election Pledges, and Policy Outcomes}} 
+{\Large \textbf{Promises Made, Promises Kept?\\ \vspace{3mm} Party Competition, Election Pledges, and Policy Outcomes}} 
 \bigskip
 
 %{\large  \textcolor{red}{Draft (last update: \today)}}
@@ -90,7 +91,7 @@ University of Zurich \\
 {\large  {Last update: \today}}\\
 \bigskip
 
-Latest version: \url{https://muellerstefan.net/teaching/2019-autumn-pceppo.pdf}
+%Latest version: \url{https://muellerstefan.net/teaching/2019-autumn-pceppo.pdf}
 \end{center}
 
 \vspace{1.5cm}
@@ -101,10 +102,10 @@ Latest version: \url{https://muellerstefan.net/teaching/2019-autumn-pceppo.pdf}
 \medskip
 % first column
 \begin{minipage}[t]{0.5\textwidth}
-Term: Autumn term 2019/Spring term 2020 \\
-Time: Wednesday, 10:15-12:00 \\
-Room: NA  \href{https://www.plaene.uzh.ch/AFL}{AFL-E-019} (Affolternstr. 56) \\
-ECTS: 15.0
+Term: Autumn term 2019 (and Spring term 2020) \\
+Time: Wednesday, 10:15--12:00 \\
+Room:  \href{https://www.plaene.uzh.ch/AFL}{AFL-E-020} (Affolternstr. 56) \\
+ECTS: 6
 \end{minipage}
 %second column
 \begin{minipage}[t]{0.49\textwidth}
@@ -145,8 +146,6 @@ The second semester includes an applied introduction to quantitative text analys
 
 \section*{Introductory Readings}
 
-\subsection*{General Readings}
-
 The seminar does not build on a single text book, but relies mostly on papers and chapters of books. For  a general overview of the course content, I recommend the following books:
 
 \begin{itemize}
@@ -157,11 +156,11 @@ The seminar does not build on a single text book, but relies mostly on papers an
 \end{itemize}
 
 
-\subsection*{Technical Background and Prerequisites}
+\section*{Technical Background and Prerequisites}
 
 The course requires good knowledge of general approaches and theories of political science and basic prior knowledge with research design and quantitative methods. The following books provide very good introductions to research design and applied quantitative methods.
 
-\subsubsection*{Research Design and Quantitative Methods}
+\subsection*{Research Design and Quantitative Methods}
 \begin{itemize}
 \item \fullcite{king94}.
 \item \fullcite{gerring01}.
@@ -170,7 +169,7 @@ The course requires good knowledge of general approaches and theories of politic
 \item \fullcite{wickham17}.
 \end{itemize}
 
-\subsubsection*{Academic Writing}
+\subsection*{Academic Writing}
 \begin{itemize}
 \item \fullcite{heard16}.
 \end{itemize}
@@ -189,12 +188,12 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 
 \item Students will prepare a  \textbf{Presentation} of one of the optional readings. This presentation counts 40\% towards the grade for this term. Dates and texts for presentations will be assigned in the third week of the seminar. The presentation includes a brief and concise discussion of the paper or book, with particular reference to the puzzle, research question, hypotheses, and results. The main part of the presentation should be devoted to a critical assessment of the paper: what open questions remain and how has subsequent research addressed these questions? What are weaknesses of the methods or case selection strategy? Are results internally and externally valid and generalisable? And how would you improve or extend the study?
 
-\item Students also submit a \textbf{Research Proposal} which counts towards 60\% of the final grade. The research proposal must not exceed 4,000 words  (including bibliography, captions, and footnotes).  The proposal  should identify an open research question, a discussion of the variation to be explained, and the importance of the research question. Moreover, the students should specify observable implications, the measurement and conceptualisation of the dependent and main independent variable, and propose a methodological approach to analyse this question. More details on these aspects and the research design will be provided throughout the seminar. The research design must be submitted via \href{https://lms.uzh.ch}{OLAT} as a \texttt{PDF} document before \textbf{January 17, 2020 (8:00pm CET)}. 
+\item Students also submit a \textbf{Research Proposal} which counts towards 60\% of the final grade. The research proposal must not exceed 4,000 words  (including bibliography, captions, and footnotes).  The proposal  should identify an open research question, a discussion of the variation to be explained, and the importance of the research question. Moreover, the students should specify observable implications, the measurement and conceptualisation of the dependent and main independent variable, and propose a methodological approach to analyse this question. More details on these aspects and the research design will be provided throughout the seminar. The research design must be submitted via \href{https://lms.uzh.ch}{OLAT} as a \texttt{PDF} document before \textbf{December 6, 2020 (8:00pm CET)}. 
 \end{itemize}
 
 
 
-
+\newpage
 
 \tableofcontents
 
@@ -216,18 +215,18 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 
 \section{Week 2: Parties and Party Systems (25.09.2019)}
 
-CHANGE!!!
 \begin{itemize}
 \renewcommand\labelitemi{--}
-\item  What doe we mean by representation and party competition? 
-\item Why do we need political parties in parliamentary democracies?
-\item How do the most important theories relate to one another? 
+\item  What are political parties?
+\item How have political parties evolved over time?
+\item What constitutes a party system?
 \end{itemize}
 
 \subsubsection*{Mandatory Readings}
 \begin{itemize}
-\item \fullcite{aldrich95}.
-\item \fullcite{katz09}.
+\item \fullcite{boix07}.
+%\item \fullcite{katz09}.
+\item \fullcite[ch. 5]{lijphart12}.
 %\item \fullcite[Kapitel 1]{dalton11}.
 %\item \fullcite[ch. 1--2]{powell00}.
 \end{itemize}
@@ -270,7 +269,7 @@ CHANGE!!!
 \end{itemize}
 
 
-\subsubsection*{Optional/Presentation}
+\subsubsection*{Optional/Presentations}
 \begin{itemize}
 \item \fullcite{chong07b}.
 \end{itemize}
@@ -329,47 +328,8 @@ CHANGE!!!
 \end{itemize}
 
  
-\section{Week 7:  Research Design [I]: Research Question and Dependent Variable  (30.10.2019)}
 
-\begin{itemize}
-\renewcommand\labelitemi{--}
-\item ADD
-\item ADD
-\end{itemize}
-
-Firebaugh, G. (2008). \url{http://press.princeton.edu/chapters/s8593.pdf}
-
-\url{http://public.wsu.edu/~tnridout/mahoney_goertz20061.pdf}.
-
-kkv 107-112
-
-\section{Week 8: Research Design [II]: Falsifiability and Causal Inference (06.11.2019)}
-
-holland 1986
-kkv ch. 3
-
-kkv 100-105
-
-\begin{itemize}
-\renewcommand\labelitemi{--}
-\item ADD
-\item ADD
-\end{itemize}
-
-\subsubsection*{Mandatory Readings}
-\begin{itemize}
-\item add content
-\end{itemize}
-
-
-\subsubsection*{Optional}
-\begin{itemize}
-\item add content
-\end{itemize}
-
-
-
-\section{Week 9:  Responsiveness (13.11.2019)}
+\section{Week 7:  Responsiveness (30.10.2019)}
 
 
 
@@ -387,7 +347,7 @@ kkv 100-105
 
 \subsubsection*{Optional/Presentations}
 \begin{itemize}
-\item \fullcite{eulau77}.
+%\item \fullcite{eulau77}.
 \item \fullcite{page83}.
 \item \fullcite{stimson95}.
 \item \fullcite{kluever16}.
@@ -395,7 +355,7 @@ kkv 100-105
 \end{itemize}
 
 
-\section{Week 10:  Party Competition (20.11.2019)}
+\section{Week 8:  Party Competition (06.11.2019)}
 
 \begin{itemize}
 \renewcommand\labelitemi{--}
@@ -406,28 +366,29 @@ kkv 100-105
 \subsubsection*{Mandatory Readings}
 \begin{itemize}
 \item \fullcite{stokes63}.
-\item \fullcite{adams09b}. % BJPS
+\item \fullcite{strom90}.
+%\item \fullcite{adams09b}. % BJPS
 \end{itemize}
 
 \subsubsection*{Optional/Presentations}
 \begin{itemize}
 \item \fullcite{greenpedersen07}.
 \item \fullcite{tavits07}.
-\item \fullcite{strom90}.
+\item \fullcite{boehmelt16}.
 %\item \fullcite{wagner14}.
 %\item \fullcite{spoon15}.
 \end{itemize}
 
 
 
-\section{Week 11:   Party Positions, Saliency and Issue Ownership (27.11.2019)}
+\section{Week 9:   Party Positions, Salience and Issue Ownership (13.11.2019)}
 
 
 \begin{itemize}
 \renewcommand\labelitemi{--}
+\item What are differences between positions, salience, and issue ownership?
 \item How can we measure latent policy positions? 
 \item What are methodological difficulties when measuring party positions?
-\item What are differences between positions, saliency, and issue ownership?
 \end{itemize}
 
 \subsubsection*{Mandatory Readings}
@@ -441,10 +402,13 @@ kkv 100-105
 \begin{itemize}
 \item \fullcite{mikhaylov12}.
 \item \fullcite{somertopcu15}.
+\item \fullcite{bischof19}.
 \end{itemize}
 
 
-\section{Week 12: Changes in Voters' and Parties' Positions (04.12.2019)}
+
+\begin{comment}
+\section{Week 10: Changes in Voters' and Parties' Positions (20.11.2019)}
 
 
 \begin{itemize}
@@ -470,17 +434,17 @@ kkv 100-105
 \item \fullcite{schumacher15}.
 \item \fullcite{abouchadi20}.
 \end{itemize}
+\end{comment}
 
 
 
-
-\section{Week 13: Representation in the Age of Digital Democracy (11.12.2019)}
+\section{Week 10: Representation in the Age of Digital Democracy (20.11.2019)}
 
 
 \begin{itemize}
 \renewcommand\labelitemi{--}
-\item What are future directions in natural language processing?
-\item \textit{Application}: introducing assumptions of word2vec and deep learning approaches
+\item How does the internet change democratic decision making and representation?
+\item Do politicians and parties react to online discussions?
 \end{itemize}
 
 \subsubsection*{Mandatory Readings}
@@ -498,16 +462,67 @@ kkv 100-105
 \end{itemize}
 
 
-
-\section{Week 14: Outlook and Q\&A about Research Proposal (18.12.2019)}
+\section{Week 11: Methods Crash Course (27.11.2019)}
 
 
 \begin{itemize}
 \renewcommand\labelitemi{--}
-\item What have we learned in this course?
-\item What open questions remain?
-\item What questions do you have about the research proposal?
+\item Recap: Using \textsf{R} to answer substantive research questions
+\item Introducing  useful datasets
+\item Broad overview of methods and software for quantitative text analysis
 \end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[skim ch. 1--6]{wickham17}.
+\item \fullcite{benoit18}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{imai17}.
+\item \fullcite{healy19}.
+\end{itemize}
+
+
+
+\section{Week 12:  Research Design: Research Question and Dependent Variable  (04.12.2019)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item \fullcite[ch. 1]{firebaugh08}.
+\item \fullcite[107--12]{king94}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{adcock01}.
+\end{itemize}
+
+\section{Week 13: Research Design: Falsifiability and Causal Inference (11.12.2019)}
+
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[ch. 3]{king94}.
+\item \fullcite{holland86}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 7]{gerring01}.
+\end{itemize}
+
+
+
+
+\section{Week 14: Feedback on Research Proposal (18.12.2019)}
+
+
+In the last session of the term, we will discuss the research proposals and outline the contents of the Spezialisierung in Spring semester 2020.
 
 
 %\newpage
@@ -515,7 +530,7 @@ kkv 100-105
 \renewcommand*{\bibfont}{\small}
 
 \setlength{\bibitemsep}{0.2em} % increase space between references
-\printbibliography
+%\printbibliography
 
 \bigskip
 
