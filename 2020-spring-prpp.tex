@@ -1,0 +1,634 @@
+\documentclass[abstract=on,parskip=full,headings=standardclasses,fontsize=11pt,paper=a4]{scrartcl}
+\usepackage[paper=a4paper,left=21mm,right=21mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\usepackage{adjustbox}
+%\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage{fullpage}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{comment}
+\urlstyle{sf}
+\usepackage{lmodern}
+\usepackage[parfill]{parskip}
+%\usepackage{url}
+%\urlstyle{same}
+\usepackage[small]{titlesec}
+\usepackage{marvosym}
+
+\setcounter{secnumdepth}{0}
+
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Course Structure (Autumn Term 2019)}%
+}
+
+
+
+\input{mueller_bib_custom.tex}
+
+\bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
+%\bibliography{/Users/stefan/GitHub/literature/muellerlibrary.bib}
+
+
+\usepackage{xcolor}
+\definecolor{JournalBlue}{RGB}{0, 12, 146}
+%https://en.wikibooks.org/wiki/LaTeX/Colors
+\usepackage[colorlinks=true, linkcolor=JournalBlue, filecolor=black, urlcolor=JournalBlue, pdfborder={0 0 0},citecolor=JournalBlue]{hyperref}%RoyalBlue
+%\usepackage[colorlinks]{hyperref}
+
+\clubpenalty = 10000 
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+\setlength\parindent{0pt}
+
+
+\usepackage{titlesec}
+\titleformat{\section}
+   {\normalfont\large\bfseries}{\thesection}{1em}{}
+
+   
+
+\begin{document}
+	
+\singlespacing
+
+\noindent
+\adjustbox{valign=t}{\begin{minipage}{0.38\textwidth}% adapt widths of minipages to your needs
+\includegraphics[width=\linewidth]{pictures/uzh_logo_en}
+\end{minipage}}%
+\hfill%
+\adjustbox{valign=t}{\begin{minipage}{0.62\textwidth}\raggedleft
+{%\footnotesize
+\textbf{Stefan Müller, PhD} \\
+Postdoctoral Researcher\\
+%Chair of Policy Analysis \\
+Department of Political Science \\
+University of Zurich \\
+\Letter\ \href{mailto:mueller@ipz.uzh.ch}{\textsf{mueller@ipz.uzh.ch}} \\
+\url{https://muellerstefan.net} \\
+}
+\end{minipage}}
+
+\singlespacing
+\vspace{1cm}
+
+\begin{center}
+{\large Research Seminar: \href{https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&sap-ui-language=DE#/details/2019/004/E/50993152}{615-502b}
+Spring Term 2020} \\ 
+\bigskip
+
+{\Large \textbf{Political Representation and Policy Preferences}} 
+\bigskip
+
+%{\large  \textcolor{red}{Draft (last update: \today)}}
+
+{\large  {Last update: \today}}\\
+\bigskip
+
+%Latest version: \url{https://muellerstefan.net/teaching/2019-autumn-pceppo.pdf}
+\end{center}
+
+\vspace{1.5cm}
+
+
+
+\hrule
+\medskip
+% first column
+\begin{minipage}[t]{0.5\textwidth}
+Term: Spring term 2020 \\
+Time: 28/02; 20/03; 08/05; 13:00--17:00 \\
+Room:  \href{https://www.plaene.uzh.ch/AFL}{AFL-F-172/173} (Affolternstr. 56) \\
+ECTS: 6
+\end{minipage}
+%second column
+\begin{minipage}[t]{0.49\textwidth}
+\begin{flushright}
+Lecturer: Stefan Müller \\
+E-mail: \href{mailto:mueller@ipz.uzh.ch}{\textsf{mueller@ipz.uzh.ch}} \\
+Office:  AFL-H-349 (Affolternstr. 56) \\
+Office hours: email for appointment \\
+\end{flushright}
+\end{minipage}
+\medskip
+\vspace{2.5mm}
+\hrule 
+ 
+
+\section*{Course Content}
+
+Do parties keep their promises or are politicians ``pledge breakers''? Are promises in certain policy areas more likely to be fulfilled? In what policy areas do parties differ in terms of their positions and issue emphasis? And how can we measure election promises and latent party positions reliably? In this seminar, we will first compare theories of policy-making and connect them with theories of party competition. Second, we discuss different approaches of measuring party positions, political ideology, and the saliency of policy areas in detail. Third, we will analyse in detail how party competition influences policy-making and identify the circumstances under which parties adjust their positions.
+
+The second semester includes an applied introduction to quantitative text analysis in order to classify text into policy areas and measure party positions. The aim of the seminar is the development of an innovative research design that forms the basis for a BA thesis.
+
+
+\section*{Details}
+
+\begin{itemize}
+\item MA Research Seminar
+\item  Language: English
+\item Grading: Wiki posts: 15\%; Poster: 15\%;  Research paper: 70\%
+\end{itemize}
+
+\section*{Learning Outcomes}
+
+\begin{enumerate}
+\item Extensive knowledge of central theories of representation, the mandate model of democracy, and party competition. 
+\item Detailed insights into past and current approaches to study questions about pledge fulfilment, party positions, responsiveness and issue ownership 
+\item Critical reading and discussing  complex academic literature and diverse methodological approaches
+\item Planning and writing a research design which forms the basis of the  BA thesis, to be written in the second part of the module (FS 2020)
+\end{enumerate}
+
+\section*{Introductory Readings}
+
+The seminar does not build on a single text book, but relies mostly on papers and chapters of books. For  a general overview of the course content, I recommend the following books:
+
+\begin{itemize}
+\item \fullcite{powell00}.
+\item \fullcite{dalton11}.
+\item \fullcite{gallagher11}.
+\item \fullcite{volkens13}.
+\end{itemize}
+
+
+\section*{Technical Background and Prerequisites}
+
+The course requires good knowledge of general approaches and theories of political science and basic prior knowledge with research design and quantitative methods. The following books provide very good introductions to research design and applied quantitative methods.
+
+\subsection*{Research Design and Quantitative Methods}
+\begin{itemize}
+\item \fullcite{king94}.
+\item \fullcite{gerring01}.
+\item \fullcite{kellstedt19}.
+\item \fullcite{imai17}.
+\item \fullcite{wickham17}.
+\end{itemize}
+
+\subsection*{Academic Writing}
+\begin{itemize}
+\item \fullcite{heard16}.
+\end{itemize}
+
+
+\section*{Syllabus Modification Rights}
+
+I reserve the right to reasonably alter the elements of the syllabus at any time by adjusting the reading list to keep pace with the course schedule. Moreover, I may change the content of specific sessions depending on the participants' prior knowledge and research interests.
+
+
+\section*{Expectations and Grading}
+
+
+\begin{itemize}
+\item Students are expected to read the papers or chapters assigned under \textbf{Mandatory Readings}. These readings serve as the basis for in-class discussions about the advantages, disadvantages, and applicability of the various approaches to social science questions. I also add optional readings which will be presented by students during their in-class presentation (see details below). 
+
+\item Students will prepare a  \textbf{Presentation} of their research projects. The presentation must not exceed 7 (!) minutes and will be held on 28 February and 20 March 2020. 
+
+\item Students will write Wiki posts for the research outlines by their group peers. Posts must be submitted no later than 2 days prior to the respective presentation. Overall, the posts count towards 15\% of the grade.
+
+\item Students also prepare a \textbf{Poster} which will be presented on 8 May 2020. The poster must be submitted as a PDF file no later than one week before the presentation (i.e. 1 May 2020). The poster counts towards 15\% of the grade. 
+
+\item Students write a research paper which needs to be submitted by ??? 8pm. The paper counts towards 70\% of the grade. The paper must not exceed ??? words (including footnotes, captions, and references). Students submit the research paper as a PDF file at OLAT.
+
+
+\end{itemize}
+
+
+
+\newpage
+
+\tableofcontents
+
+\section{Week 1: Organisation and Introduction (18.09.2019)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Expectations
+\item Discussion of syllabus
+\item Initial information on presentations, the research proposal, and the second term 
+\end{itemize}
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[ch. 1]{clarke18}.
+\end{itemize}
+
+
+\section{Week 2: Parties and Party Systems (25.09.2019)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item  What are political parties?
+\item What does Lijphart mean by the Westminter Model of Democracy and the Consensus Model of Democracy?
+\item How can we distinguish between different types of democracies?
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+%\item \fullcite{boix07}.
+%\item \fullcite{katz09}.
+\item \fullcite[ch. 1--3]{lijphart12}.
+%\item \fullcite[Kapitel 1]{dalton11}.
+%\item \fullcite[ch. 1--2]{powell00}.
+\end{itemize}
+
+
+
+\section{Week 3:  Mandate Model of Democracy (02.10.2019)}
+
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item What is the `democratic mandate'? 
+\item How we measure campaign promises/pledges?
+\item Do parties fulfil their promises?
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[29--40]{manin99}.
+\item \fullcite{thomson17}.
+\item \fullcite{thomson18}.
+\end{itemize}
+
+
+
+
+\section{Week 4:  Research Design: Research Question and Dependent Variable  (09.10.2019)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item How do we identify and specify a good research question?
+\item What is a dependent variable and why do we require variation?
+\item What are different types of research designs?
+\end{itemize}
+
+
+\subsubsection*{Mandatory}
+
+
+\begin{itemize}
+\item \fullcite[ch. 1]{firebaugh08}.
+\item \fullcite[ch. 1; 107--12]{king94}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{adcock01}.
+\item \fullcite[ch. 4]{kellstedt13}.
+\end{itemize}
+
+\section{Week 5: Research Design: Falsifiability and Causal Inference (16.10.2019)}
+
+\begin{itemize}
+\item  Why do theories need to be falsifiable?
+\item What is causal inference and can we draw causal conclusions from observational data?
+\end{itemize}
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[ch. 3]{king94}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 7]{gerring01}.
+\item \fullcite{holland86}.
+\end{itemize}
+
+
+
+
+
+\section{Week 6: Measuring Public Opinion (23.10.2019)}
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item What is public opinion?
+\item How can we measure public opinion? 
+\item What are advantages and shortcomings of different survey instruments?
+\end{itemize}
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite{squire88}.
+\item \fullcite{berinsky17}.
+\end{itemize}
+
+
+\subsubsection*{Optional/Presentations}
+\begin{itemize}
+\item \fullcite{chong07b}.
+\item \fullcite{boynton04}.
+\end{itemize}
+
+
+\begin{comment}
+\section{Week 5: Politicians: Trustees or Delegates? (16.10.2019)}
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item What roles do politicians take during campaigns and in office? 
+\item What are differences between the trustee and delegate model of representation? What type of representation is preferable?
+\end{itemize}
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite{mueller06}.
+\end{itemize}
+
+
+\subsubsection*{Optional/Presentations}
+\begin{itemize}
+\item \fullcite{bowler17}.
+\item \fullcite{mueller00b}.
+\item \fullcite{oennudottir16}.
+%\item \fullcite{werner18}.
+\end{itemize}
+\end{comment}
+
+
+\section{Week 7: Economic Voting and the Cost of Governing (30.10.2019)}
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item What is democratic accountability?
+\item Why do government parties  regularly lose public support at the next election?
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+
+\begin{itemize}
+\item \fullcite[ch. 5]{achen16}.
+\item \fullcite{kluever19}.
+\end{itemize}
+
+
+\subsubsection*{Optional/Presentations}
+\begin{itemize}
+\item \fullcite{sances17}.
+%\item \fullcite{reif80}.
+\item \fullcite{fowler18}.
+%\item \fullcite{healy13}.
+%\item \fullcite{muellerlouwerse}.
+\end{itemize}
+
+ 
+ 
+
+\section{Week 8:  CLASS CANCELLED (06.11.2019)}
+
+\begin{comment}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item What are the differences between accountability and responsiveness?
+\item Do parties and politicians react to public opinion? 
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite{wlezien95}.
+\item \fullcite{kluever16}.
+\end{itemize}
+
+\subsubsection*{Optional/Presentations}
+\begin{itemize}
+\item \fullcite{powell04b}.
+%\item \fullcite{eulau77}.
+\item \fullcite{page83}.
+\item \fullcite{stimson95}.
+%\item \fullcite{soroka10}.
+\end{itemize}
+\end{comment}
+
+\section{Week 9:  Party Competition (13.11.2019)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item What goals do parties and politicians pursue?
+\item How do parties compete with each other, and how can we measure party competition?
+\item What are the differences between accountability and responsiveness?
+\item Do parties and politicians react to public opinion? 
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+%\item \fullcite{strom90}.
+\item \fullcite{somertopcu15}.
+\item \fullcite{kluever16}.
+
+%\item \fullcite{adams09b}. % BJPS
+\end{itemize}
+
+\subsubsection*{Optional/Presentations}
+\begin{itemize}
+\item \fullcite{powell04b}.
+%\item \fullcite{eulau77}.
+\item \fullcite{page83}.
+\item \fullcite{stimson95}.
+\item \fullcite{stokes63}.
+\item \fullcite{greenpedersen07}.
+\item \fullcite{tavits07}.
+\item \fullcite{boehmelt16}.
+%\item \fullcite{wagner14}.
+%\item \fullcite{spoon15}.
+\end{itemize}
+
+
+
+\section{Week 10:   Party Positions, Salience and Issue Ownership (20.11.2019)}
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item What are differences between positions, salience, and issue ownership?
+\item How can we measure latent policy positions? 
+\item What are methodological difficulties when measuring party positions?
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite{laver14}.
+\item \fullcite{budge15}.
+\end{itemize}
+
+
+\subsubsection*{Optional/Presentations}
+\begin{itemize}
+\item \fullcite{leinaweaver16}.
+\item \fullcite{mikhaylov12}.
+\item \fullcite{somertopcu15}.
+\item \fullcite{bischof19}.
+\end{itemize}
+
+
+
+\section{Week 11: Methods: Data Wrangling and Visualisation (27.11.2019)}
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Recap: Using \textsf{R} to answer substantive research questions
+\item Introducing  useful datasets
+\item Broad overview of methods and software for quantitative text analysis
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[skim ch. 1--6]{wickham17}.
+%\item \fullcite{benoit18}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{imai17}.
+\item \fullcite{healy19}.
+\end{itemize}
+
+
+
+\begin{comment}
+\section{Week 10: Changes in Voters' and Parties' Positions (20.11.2019)}
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item When do parties and voters change ideological positions?
+\item How do new parties influence positions and saliency of established parties?
+\end{itemize}
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+%\item \fullcite[Kapitel 1--2]{soroka10}.
+\item \fullcite{boehmelt16}.
+\item \fullcite{bischof19}.
+\end{itemize}
+
+
+
+\subsubsection*{Optional/Presentations}
+\begin{itemize}
+\item \fullcite{adams09}.
+%\item \fullcite{adams11}.
+\item \fullcite{schumacher15}.
+\item \fullcite{abouchadi20}.
+\end{itemize}
+\end{comment}
+
+
+\section{Week 12: Methods: Quantitative Text Analysis [I] (04.12.2019)}
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item What is quantitative text analysis?
+\item What is a text corpus, tokenisation, and a document-feature matrix?
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite{grimmer13}.
+\item \fullcite{welbers17}.
+\item \fullcite{benoit18}.
+\end{itemize}
+
+
+See also: \url{https://muellerstefan.net/teaching/2019-autumn-qta.pdf}.
+
+\section{Week 13:  Methods: Quantitative Text Analysis [II] (11.12.2019)}
+
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item How can we apply the methods discussed in the previous session to real-world data?
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite{laver03}.
+\item \fullcite{benoit16}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{watanabemueller}.
+\end{itemize}
+
+See also: \url{https://muellerstefan.net/teaching/2019-autumn-qta.pdf}.
+
+
+
+\section{Week 14: Representation in the Age of Digital Democracy (18.12.2019)}
+
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item How does the internet change democratic decision making and representation?
+\item Do politicians and parties react to online discussions?
+\end{itemize}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite{king17b}.
+\item \fullcite{guess19}.
+\end{itemize}
+
+
+\subsubsection*{Optional/Presentations}
+\begin{itemize}
+\item \fullcite{farrell12}.
+\item \fullcite{barbera19}.
+\item \fullcite{neuman14}.
+\end{itemize}
+
+
+
+
+
+
+
+
+\begin{comment}
+\section{Week 14: Feedback on Research Proposal (18.12.2019)}
+
+
+In the last session of the term, we will discuss the research proposals and outline the contents of the Spezialisierung in Spring semester 2020.
+\end{comment}
+
+%\newpage
+\sloppy
+\renewcommand*{\bibfont}{\small}
+
+\setlength{\bibitemsep}{0.2em} % increase space between references
+%\printbibliography
+
+\bigskip
+
+%\begin{center}
+%Last updated: \today
+%\end{center}
+
+\end{document}
+
+
