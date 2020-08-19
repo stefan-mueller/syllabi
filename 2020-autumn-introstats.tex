@@ -35,8 +35,8 @@
 
 \input{mueller_bib_custom.tex}
 
-\bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
-%\bibliography{/Users/stefan/GitHub/literature/muellerlibrary.bib}
+%\bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
+\bibliography{/Users/stefan/GitHub/literature/muellerlibrary.bib}
 
 
 \usepackage{xcolor}
@@ -137,8 +137,8 @@ Autumn Trimester 2020} \\
 % first column
 \begin{minipage}[t]{0.5\textwidth}
 Term: Autumn Trimester 2020 \\
-Time: TBC \\
-Location:  TBC  \\
+Time: Lecture (Mon, 13:00); Lab (Mon, 14:00) \\
+Location:  Lecture: QUI 006; Lab: G-30PCLab \\
 ECTS: 10.0 \\
 Format: Lectures; lab work; blended learning
 \end{minipage}
@@ -149,7 +149,7 @@ Convener: Stefan Müller \\
  \href{mailto:stefan.mueller@ucd.ie}{\textsf{stefan.mueller@ucd.ie}} \\
  \url{https://muellerstefan.net} \\
 Office:  Newman Building, G303 \\
-Virtual office hours: Thu 11:00--13:00
+Virtual office hours: Thu, 11:00--13:00
 \end{flushright}
 \end{minipage}
 \medskip
@@ -160,10 +160,18 @@ Virtual office hours: Thu 11:00--13:00
 
 %Introduction to the use of data for statistical analysis in political science and related disciplines (sociology, public policy, international relations, etc.). The module will introduce concepts such as measurement, variables, statistical data, and provide an introduction to basic descriptive statistics summarizing numerical data, both graphically and numerically. 
 
-This course is an introduction to quantitative data analysis in the social sciences, in particular political science, public policy, and sociology. Do you want to know whether more informed voters are more likely to have liberal values? Whether democracies are less likely to initiate a war? Whether high tax rates lead to higher levels of corruption? For many social science questions, what we are really after is establishing whether there is a relationship between two variables of interest. And, we typically want to verify that there is no third variable explaining this relationship.
+Welcome to Introduction to Statistics! In this course you will learn about concepts such as measurement, variables, statistical data and get equipped to answer a social science research question using linear statistical models and the statistical programming language \textsf{R}.
 
-In statistical analysis, the first tool one usually reverts  to answer such questions is regression analysis. There are many other statistical tools available to the social scientist, but regression analysis is by far the most common and a thorough understanding of this method generally the key to being able to read or write quantitative social science papers and research reports. The course therefore will introduce you to regression analysis -- including model specification (which variables to include in a model?) and statistical inference (how do I know whether my findings hold for cases beyond my sample?).
 
+Do you want to know whether more informed voters are more likely to have liberal values? Are political parties responsive to the issue priorities by voters? Are  democracies less likely to initiate a war? Do high tax rates lead to higher levels of corruption? Can voters accurately predict the government that will be formed after an election? Answering such questions usually requires the analysis of data  
+-- information about people, parties, communication, firms, or nations. %Political scientists analyse data with an eye to explaining the social world. 
+
+There are many other statistical tools available to the social scientist, but regression analysis is by far the most common. A thorough understanding of this method is required to read or write quantitative social science papers and research reports. The course therefore will mainly focus on regression analysis -- including model specification (which variables to include in a model?) and statistical inference (how do I know whether my findings hold for cases beyond my sample?).
+
+By the end of this module, you will have gained a basic understanding of statistics and the so called frequentist approach of hypothesis testing. The lab sessions and two homework assignments will make you familiar with the \textsf{R} statistical programming language and prepare you two write an original quantitative research paper. 
+
+
+% For many social science questions, what we are really after is establishing whether there is a relationship between two variables of interest. And, we typically want to verify that there is no third variable explaining this relationship.
 
 The core textbook for the course is \textcite{ismay20}, which is freely available online at \url{https://moderndive.com}.\footnote{\fullcite{ismay20}. URL: \url{https://moderndive.com}.} This book takes a modern, data science approach to regression analysis. The differences between data science and more typical quantitative social science will be discussed in class, in particular in the context of model specification.\footnote{The structure of this module is similar to \href{http://www.joselkink.net/STATS-Autumn-2019.php}{Introduction to Statistics} taught at the School of Politics and International Relations in previous years. I thank Jos Elkink for allowing me to follow and adjust the structure of the previously taught module.}
 
@@ -175,7 +183,7 @@ For the applied parts of this course, such as data import, data wrangling, and d
 \end{itemize}
 
 
-We will work extensively with the \textsf{R} statistical programming language. The three books mentioned above \autocite{ismay20,wickham17,healy19}  rely on the \textsf{R} statistical programming language and provide detailed and intuitive examples and the corresponding \textsf{R} code (based on the \href{https://www.tidyverse.org}{\texttt{tidyverse}} approach). In addition to these books, I recommend the following literature for introductions to statistical methods, regression, causal inference, and \textsf{R}:
+We will work extensively with the \textsf{R} statistical programming language. The three books mentioned above \autocite{ismay20,wickham17,healy19}   provide detailed and intuitive examples and the corresponding \textsf{R} code (based on the \href{https://www.tidyverse.org}{\texttt{tidyverse}} approach). In addition to these books, I recommend the following literature for introductions to statistical methods, regression, causal inference, and \textsf{R}:
 
 \begin{itemize}
 \item \textbf{Basic grasp of statistics}: \fullcite{spiegelhalter20}.
@@ -209,7 +217,7 @@ We will work extensively with the \textsf{R} statistical programming language. T
 
 The sessions consist of lectures and labs each week. Some of the lectures and labs will be online. The lectures focus on the fundamental aspects of statistical inference as well as the interpretation of these methods and examples. %The lectures will make use of small  exercises and quizzes.
 
-In the online lab, students will be provided with clear instructions and solve problems related to data wrangling, visualisation and statistical methods using the statistical programming language R. The homework assignments are structured so that they gradually lead up to a comprehensive regression analysis and associated social science paper, putting the technical material of the class in practice.
+In the online lab, students will be provided with clear instructions and solve problems related to data wrangling, visualisation and statistical methods. The homework assignments are structured so that they gradually lead up to a comprehensive regression analysis and associated social science paper, putting the technical material of the class in practice.
 
 I will make extensive use of quizzes\footnote{\url{https://mentimeter.com.}} throughout the lectures to increase attention and engagement in times of blended learning and online lectures. In addition, I will distribute several short feedback surveys during the term in which you can indicate what you can provide feedback, ask questions, and make improvement suggestions. 
 
@@ -294,7 +302,7 @@ All written work must be submitted on or before the due dates. Students will los
 
 In this module, we will discuss concepts, methods, and software you might not have heard of before. I am  aware that parts of this module could be challenging and I will assist you as best as I can. In addition to the lectures and lab sessions, I  offer weekly office hours only  for  participants of this module. The office hours will take place via Zoom. I will share the link and password to the virtual room in the first lecture and post it on Brightspace. 
 
-If you struggle to solve problems relating to \textsf{R} or RStudio, I expect that you first consult the assigned readings and \href{https://stackoverflow.com}{StackOverflow}. It is very likely that at least one other person faced the same problem before or received the same error message.  If something is not working, try the following steps first before contacting me: 
+If you struggle to solve problems relating to \textsf{R} or RStudio, please follow the steps outlined below before contacting me. It is very likely that at least one other person faced the same problem before or received the same error message. % If something is not working, try the following steps first before contacting me: 
 \begin{enumerate}
 \item Use the `Search' function in the online books of the recommended textbooks \autocite{ismay20,wickham17,healy19} and look up keywords that relate to your problem or the function that causes a problem. For questions about concepts, I recommend to consult the \href{https://hbiostat.org/doc/glossary.pdf}{Glossary of Statistical Terms} \autocite{harrell}.
 \item Try to summarise the problem in your own words and then google this summary. If the problem relates to \textsf{R}, add \texttt{rstats} to your search query. For example: \texttt{how to import csv file in rstats}. I am almost certain that you find a solution to most of your questions. 
@@ -318,7 +326,7 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 \section{Week 1: Accessing and Visualising Data (21--25 September 2020)}
 
 
-\textit{What is quantitative political science? What are data? What is a variable? What are the different levels of measurement? How to describe your variables graphically, including pie charts, histograms. How to look at a distribution.}
+\textit{What is quantitative political science? What are data? What is a variable? What are the different levels of measurement? How to describe your variables graphically, including pie charts, histograms. How to look at a distribution?}
 
 \subsubsection*{Mandatory Readings}
 \begin{itemize}
@@ -335,7 +343,7 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 
 \section{Week 2: Descriptive Statistics (28 September -- 2 October 2020)}
 
-\textit{How to describe your variables numerically, including the mean, mode, median, variance, and standard deviation. How to describe relations between variables graphically, including bar charts, scatterplots, and boxplots. Discussion of covariance and correlation to look at numerical indicators of relationships.}
+\textit{How to describe your variables numerically, including the mean, mode, median, variance, and standard deviation. How to describe relations between variables graphically, including bar charts, scatterplots, and boxplots. Discussion of covariance and correlation.}
 
 \subsubsection*{Mandatory Readings}
 \begin{itemize}
@@ -381,7 +389,64 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 \end{itemize}
 
 
-\section{Week 5: Reporting (Regression) Results (19--22 October 2020)}
+\section{Week 5: Multiple Regression -- Categorical Independent Variables and Interactions (19--22 October 2020)}
+
+
+\textit{Categorical independent variables in multiple regression. Modeling interaction effects in multiple regression.}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[ch. 7]{fox15}.
+\item \fullcite[ch. 6.1.2]{ismay20}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{hainmueller19}.
+\item \fullcite{clark06}.
+\item \fullcite{solt17}.
+\end{itemize}
+
+\section{Reading Week (26--30 October 2020) }
+
+
+
+
+
+
+\section{Week 6:  Sampling Distributions and Central Limit Theorem (2--6 November 2020)}
+
+
+\textit{What are probabilities and probability distributions? Introduction to the normal distribution. What is statistical inference? Introduction to sampling methods. What is the Central Limit Theorem?}
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[ch. 5]{ismay20}.
+\item \fullcite[ch. 7]{kellstedt18}.
+\end{itemize}
+
+
+\section{Week 7:  Hypothesis Tests and Confidence Intervals (9--13 November 2020)}
+
+
+\textit{What are hypothesis tests and confidence intervals? How to think of statistical inference in multiple regression analysis.}
+
+
+\begin{itemize}
+\item \fullcite[ch. 9--10]{ismay20}.
+%\item \fullcite[ch. 7]{kellstedt18}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 7]{spiegelhalter20}.
+\end{itemize}
+
+
+\section{Week 8: Reporting (Regression) Results (16--20 November 2020)}
 
 
 \textit{How to present and interpret regression results. How to structure a quantitative research paper. How to convince the reader of the robustness of your results.}
@@ -402,60 +467,6 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 \item \fullcite[ch. 14]{larsen}.
 \end{itemize}
 
-
-\section{Reading Week (26--30 October 2020) }
-
-
-\section{Week 6: Multiple Regression -- Categorical Independent Variables and Interactions (2--6 November 2020)}
-
-
-\textit{Categorical independent variables in multiple regression. Modeling interaction effects in multiple regression.}
-
-\subsubsection*{Mandatory Readings}
-\begin{itemize}
-\item \fullcite[ch. 7]{fox15}.
-\item \fullcite[ch. 6.1.2]{ismay20}.
-\end{itemize}
-
-
-\subsubsection*{Optional}
-\begin{itemize}
-\item \fullcite{hainmueller19}.
-\item \fullcite{clark06}.
-\item \fullcite{solt17}.
-\end{itemize}
-
-
-
-\section{Week 7:  Sampling Distributions and Central Limit Theorem (9--13 November 2020)}
-
-
-\textit{What are probabilities and probability distributions? Introduction to the normal distribution. What is statistical inference? Introduction to sampling methods. What is the Central Limit Theorem?}
-
-
-\subsubsection*{Mandatory Readings}
-\begin{itemize}
-\item \fullcite[ch. 5]{ismay20}.
-\item \fullcite[ch. 7]{kellstedt18}.
-\end{itemize}
-
-
-\section{Week 8:  Hypothesis Tests and Confidence Intervals (16--20 November 2020)}
-
-
-\textit{What are hypothesis tests and confidence intervals? How to think of statistical inference in multiple regression analysis.}
-
-
-\begin{itemize}
-\item \fullcite[ch. 9--10]{ismay20}.
-%\item \fullcite[ch. 7]{kellstedt18}.
-\end{itemize}
-
-
-\subsubsection*{Optional}
-\begin{itemize}
-\item \fullcite[ch. 7]{spiegelhalter20}.
-\end{itemize}
 
 
 \section{Week 9: Multiple Regression --  Diagnostics and Model Fit (23--27 November 2020)}
@@ -484,7 +495,8 @@ Possible contents:
 \begin{itemize}
 \item Categorical dependent variables (logistic and multinomial regression)
 \item Reproducible research
-\item ???
+\item Advanced data visualisation
+\item A primer on computational social science methods
 \end{itemize}
 
 \newpage
