@@ -1,6 +1,6 @@
 \documentclass[abstract=on,parskip=full,headings=standardclasses,fontsize=11pt,paper=a4]{scrartcl}
 %\usepackage[paper=a4paper,left=21mm,right=21mm,top=25mm,bottom=25mm]{geometry}
-\usepackage[paper=a4paper,left=20mm,right=15mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[paper=a4paper,left=22mm,right=22mm,top=25mm,bottom=25mm]{geometry}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -57,7 +57,7 @@
 
 \usepackage{titlesec}
 \titleformat{\section}
-{\normalfont\large\bfseries}{\thesection}{1em}{}
+{\normalfont\large\bfseries\onehalfspacing}{\thesection}{3em}{}
 
    
 
@@ -225,7 +225,7 @@ I will make extensive use of quizzes\footnote{\url{https://mentimeter.com.}} thr
 \section*{Expectations and Grading}
 
 
-Students submit two \textbf{homework assignments} during the term (after the end of Week 3 and Week 6). Each homework counts towards 25\% of the final grade.  The homeworks will be distributed via Brightspace 14 days before the submission deadline as an RMarkdown file.\footnote{\textcite{xie18} provide a very extensive and detailed introduction to RMarkdown. For a very short primer to RMarkdown see: \url{https://rmarkdown.rstudio.com/articles_intro.html} We will discuss how to create and compile RMarkdown files in the first two weeks of the module.} Students fill in the answers and solutions in the same RMarkdown file, rename it to \texttt{hw\_01/02\_surname\_firstname.Rmd}, knit it as an \texttt{html} file, and submit it via Brightspace. Only knitted \texttt{html} files will be accepted. More details on the homeworks will be provided in the first session(s) of the course.
+Students submit two \textbf{homework assignments} during the term (after the end of Week 3 and Week 6). Each homework counts towards 25\% of the final grade.  The homeworks will be distributed via Brightspace 14 days before the submission deadline as an RMarkdown file.\footnote{\textcite{xie18} provide an extensive and detailed introduction to RMarkdown. For a very short primer to RMarkdown see: \url{https://rmarkdown.rstudio.com/articles_intro.html} We will discuss how to create and compile RMarkdown files in the first two weeks of the module.} Students fill in the answers and solutions in the same RMarkdown file, rename it to \texttt{hw\_01/02\_surname\_firstname.Rmd}, knit it as an \texttt{html} file, and submit it via Brightspace. Only knitted \texttt{html} files will be accepted. More details on the homeworks will be provided in the first session(s) of the course.
 
 
 Students also submit a \textbf{course paper} which counts towards 50\% of the final grade. The research paper is a written analysis consisting of 4,000 words (including bibliography, captions, and footnotes). Students are required to develop a research question and answer this question using quantitative methods and regression analysis. Students are free to answer questions from all fields of social science, but must justify their choice and the relevance of the question. The course paper must address the following aspects: research gap and relevance; theory and expectations (based on previous research); data and methodological approach; results; conclusion and outlook. The course paper must be submitted via Brightspace as a \texttt{pdf} document before \textbf{TBC}.  Detailed instructions on the research paper, the presentation, and the in-class discussion will be provided in class and on Brightspace.
@@ -322,9 +322,9 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 
 \subsubsection*{Mandatory Readings}
 \begin{itemize}
-\item \fullcite[ch. 1]{healy19}.
 \item \fullcite[ch. 1--3]{ismay20}.
-\item \texttt{tidyverse} style guide: \url{https://style.tidyverse.org}.
+\item \fullcite[ch. 4]{wickham17}.
+\item \fullcite[ch. 1]{healy19}.
 \end{itemize}
 
 \subsubsection*{Optional}
@@ -406,7 +406,7 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 \section{Reading Week (26--30 October 2020) }
 
 
-\section{Week 6: Multiple Regression -- Categorical Independent Variables Interaction Effects (2--6 November 2020)}
+\section{Week 6: Multiple Regression -- Categorical Independent Variables and Interactions (2--6 November 2020)}
 
 
 \textit{Categorical independent variables in multiple regression. Modeling interaction effects in multiple regression.}
