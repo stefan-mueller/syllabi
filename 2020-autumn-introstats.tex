@@ -35,8 +35,8 @@
 
 \input{mueller_bib_custom.tex}
 
-%\bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
-\bibliography{/Users/stefan/GitHub/literature/muellerlibrary.bib}
+\bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
+%\bibliography{/Users/stefan/GitHub/literature/muellerlibrary.bib}
 
 
 \usepackage{xcolor}
@@ -125,7 +125,9 @@ Autumn Trimester 2020} \\
 {\large  {Last update: \today}}\\
 \bigskip
 
-%Latest version: \url{https://muellerstefan.net/teaching/2019-autumn-pceppo.pdf}
+\textbf{Note: Draft -- subject to change}
+
+Latest version: \url{https://muellerstefan.net/teaching/2020-autumn-introstats.pdf}
 \end{center}
 
 \vspace{1.5cm}
@@ -162,16 +164,13 @@ Virtual office hours: Thu, 11:00--13:00
 
 Welcome to Introduction to Statistics! In this course you will learn about concepts such as measurement, variables, statistical data and get equipped to answer a social science research question using linear statistical models and the statistical programming language \textsf{R}.
 
-
 Do you want to know whether more informed voters are more likely to have liberal values? Are political parties responsive to the issue priorities by voters? Are  democracies less likely to initiate a war? Do high tax rates lead to higher levels of corruption? Can voters accurately predict the government that will be formed after an election? Answering such questions usually requires the analysis of data  
--- information about people, parties, communication, firms, or nations. %Political scientists analyse data with an eye to explaining the social world. 
+-- information about people, parties, communication, firms, or nations.
 
 There are many other statistical tools available to the social scientist, but regression analysis is by far the most common. A thorough understanding of this method is required to read or write quantitative social science papers and research reports. The course therefore will mainly focus on regression analysis -- including model specification (which variables to include in a model?) and statistical inference (how do I know whether my findings hold for cases beyond my sample?).
 
 By the end of this module, you will have gained a basic understanding of statistics and the so called frequentist approach of hypothesis testing. The lab sessions and two homework assignments will make you familiar with the \textsf{R} statistical programming language and prepare you two write an original quantitative research paper. 
 
-
-% For many social science questions, what we are really after is establishing whether there is a relationship between two variables of interest. And, we typically want to verify that there is no third variable explaining this relationship.
 
 The core textbook for the course is \textcite{ismay20}, which is freely available online at \url{https://moderndive.com}.\footnote{\fullcite{ismay20}. URL: \url{https://moderndive.com}.} This book takes a modern, data science approach to regression analysis. The differences between data science and more typical quantitative social science will be discussed in class, in particular in the context of model specification.\footnote{The structure of this module is similar to \href{http://www.joselkink.net/STATS-Autumn-2019.php}{Introduction to Statistics} taught at the School of Politics and International Relations in previous years. I thank Jos Elkink for allowing me to follow and adjust the structure of the previously taught module.}
 
@@ -192,14 +191,19 @@ We will work extensively with the \textsf{R} statistical programming language. T
 \item \fullcite{kellstedt18}.
 \item \fullcite{king94}.
 \end{itemize}
-\item \textbf{\textsf{R} for political scientists}: \fullcite{larsen}.
+\item \textbf{\textsf{R} and regression analysis}: 
+\begin{itemize}
+\item \fullcite{larsen}.
+\item \fullcite{bryan}.
+\item \fullcite{gelman20}.
+\end{itemize}
 \item \textbf{Data visualisation}: \fullcite{wilke19}.
 \item \textbf{Causal inference}: 
 \begin{itemize}
-\item \fullcite{buenodemesquita}.
+%\item \fullcite{buenodemesquita}.
 \item \fullcite{cunningham}.
 \end{itemize}
-\item \textbf{RMarkdown}: \fullcite{xie18}.
+\item \textbf{RMarkdown}: \fullcite[ch. 27, 29]{wickham17}.
 \end{itemize}
 
 \section*{Learning Outcomes}
@@ -219,7 +223,7 @@ The sessions consist of lectures and labs each week. Some of the lectures and la
 
 In the online lab, students will be provided with clear instructions and solve problems related to data wrangling, visualisation and statistical methods. The homework assignments are structured so that they gradually lead up to a comprehensive regression analysis and associated social science paper, putting the technical material of the class in practice.
 
-I will make extensive use of quizzes\footnote{\url{https://mentimeter.com.}} throughout the lectures to increase attention and engagement in times of blended learning and online lectures. In addition, I will distribute several short feedback surveys during the term in which you can indicate what you can provide feedback, ask questions, and make improvement suggestions. 
+I will make extensive use of quizzes  throughout the lectures to increase attention and engagement in times of blended learning and online lectures. In addition, I will distribute several short feedback surveys during the term in which you can indicate what you can provide feedback, ask questions, and make improvement suggestions. 
 
 \section*{Overview of Assessment}
 
@@ -233,7 +237,7 @@ I will make extensive use of quizzes\footnote{\url{https://mentimeter.com.}} thr
 \section*{Expectations and Grading}
 
 
-Students submit two \textbf{homework assignments} during the term (after the end of Week 3 and Week 6). Each homework counts towards 25\% of the final grade.  The homeworks will be distributed via Brightspace 14 days before the submission deadline as an RMarkdown file.\footnote{\textcite{xie18} provide an extensive and detailed introduction to RMarkdown. For a very short primer to RMarkdown see: \url{https://rmarkdown.rstudio.com/articles_intro.html} We will discuss how to create and compile RMarkdown files in the first two weeks of the module.} Students fill in the answers and solutions in the same RMarkdown file, rename it to \texttt{hw\_01/02\_surname\_firstname.Rmd}, knit it as an \texttt{html} file, and submit it via Brightspace. Only knitted \texttt{html} files will be accepted. More details on the homeworks will be provided in the first session(s) of the course.
+Students submit two \textbf{homework assignments} during the term (after the end of Week 3 and Week 6). Each homework counts towards 25\% of the final grade.  The homeworks will be distributed via Brightspace 14 days before the submission deadline as an RMarkdown file.\footnote{For a very short primer to RMarkdown see: \url{https://rmarkdown.rstudio.com/articles_intro.html}. We will discuss how to create and compile RMarkdown files in the first two weeks of the module.} Students fill in the answers and solutions in the same RMarkdown file, rename it to \texttt{hw\_01/02\_surname\_firstname.Rmd}, knit it as an \texttt{html} file, and submit it via Brightspace. Only knitted \texttt{html} files will be accepted. More details on the homeworks will be provided in the first session(s) of the course.
 
 
 Students also submit a \textbf{course paper} which counts towards 50\% of the final grade. The research paper is a written analysis consisting of 4,000 words (including bibliography, captions, and footnotes). Students are required to develop a research question and answer this question using quantitative methods and regression analysis. Students are free to answer questions from all fields of social science, but must justify their choice and the relevance of the question. The course paper must address the following aspects: research gap and relevance; theory and expectations (based on previous research); data and methodological approach; results; conclusion and outlook. The course paper must be submitted via Brightspace as a \texttt{pdf} document before \textbf{TBC}.  Detailed instructions on the research paper, the presentation, and the in-class discussion will be provided in class and on Brightspace.
@@ -304,7 +308,7 @@ In this module, we will discuss concepts, methods, and software you might not ha
 
 If you struggle to solve problems relating to \textsf{R} or RStudio, please follow the steps outlined below before contacting me. It is very likely that at least one other person faced the same problem before or received the same error message. % If something is not working, try the following steps first before contacting me: 
 \begin{enumerate}
-\item Use the `Search' function in the online books of the recommended textbooks \autocite{ismay20,wickham17,healy19} and look up keywords that relate to your problem or the function that causes a problem. For questions about concepts, I recommend to consult the \href{https://hbiostat.org/doc/glossary.pdf}{Glossary of Statistical Terms} \autocite{harrell}.
+\item Use the `Search' function in the online books of the recommended textbooks \autocite{ismay20,wickham17,healy19} and look up keywords that relate to your problem or the function that causes a problem. For questions about concepts, I recommend to consult the \href{https://hbiostat.org/doc/glossary.pdf}{Glossary of Statistical Terms}.
 \item Try to summarise the problem in your own words and then google this summary. If the problem relates to \textsf{R}, add \texttt{rstats} to your search query. For example: \texttt{how to import csv file in rstats}. I am almost certain that you find a solution to most of your questions. 
 \item If your \textsf{R} code returns an error, I would advise you to Google the text the error message.  For example: \texttt{Error: Can't subset columns that don't exist.}
 \end{enumerate}
@@ -330,15 +334,17 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 
 \subsubsection*{Mandatory Readings}
 \begin{itemize}
+\item \fullcite[ch. 1]{bryan}
 \item \fullcite[ch. 1--3]{ismay20}.
 \item \fullcite[ch. 4]{wickham17}.
-\item \fullcite[ch. 1]{healy19}.
 \end{itemize}
 
 \subsubsection*{Optional}
 \begin{itemize}
+\item \fullcite[ch. 1]{healy19}.
 \item \fullcite[ch. 2]{spiegelhalter20}.
 \item \fullcite[ch. 7, 10]{larsen}.
+\item \fullcite{bryan18}.
 \end{itemize}
 
 \section{Week 2: Descriptive Statistics (28 September -- 2 October 2020)}
@@ -386,6 +392,7 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 \begin{itemize}
 \item \fullcite[ch. 10--11]{kellstedt18}.
 \item \fullcite[ch. 11]{larsen}.
+\item \fullcite{hardy93}.
 \end{itemize}
 
 
@@ -405,7 +412,7 @@ I reserve the right to reasonably alter the elements of the syllabus at any time
 \begin{itemize}
 \item \fullcite{hainmueller19}.
 \item \fullcite{clark06}.
-\item \fullcite{solt17}.
+%\item \fullcite{solt17}.
 \end{itemize}
 
 \section{Reading Week (26--30 October 2020) }
@@ -499,12 +506,20 @@ Possible contents:
 \item A primer on computational social science methods
 \end{itemize}
 
-\newpage
-\sloppy
-\renewcommand*{\bibfont}{\small}
-\onehalfspacing
-\setlength{\bibitemsep}{0.2em} % increase space between references
-\printbibliography
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{gill19}.
+\end{itemize}
+
+
+
+%\newpage
+%\sloppy
+%\renewcommand*{\bibfont}{\small}
+%\onehalfspacing
+%\setlength{\bibitemsep}{0.2em} % increase space between references
+%\printbibliography
 \end{document}
 
 
