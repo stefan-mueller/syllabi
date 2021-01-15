@@ -1,0 +1,489 @@
+\documentclass[abstract=on,parskip=full,headings=standardclasses,fontsize=11pt,paper=a4]{scrartcl}
+%\usepackage[paper=a4paper,left=21mm,right=21mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[paper=a4paper,left=22mm,right=22mm,top=20mm,bottom=25mm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\usepackage{adjustbox}
+%\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage{fullpage}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{comment}
+\urlstyle{sf}
+\usepackage{lmodern}
+\usepackage[parfill]{parskip}
+%\usepackage{url}
+%\urlstyle{same}
+\usepackage[small]{titlesec}
+\usepackage{marvosym}
+
+\setcounter{secnumdepth}{0}
+
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Course Structure}%
+}
+
+
+
+\input{mueller_bib_custom.tex}
+
+\bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
+%\bibliography{/Users/stefan/GitHub/literature/muellerlibrary.bib}
+
+
+\usepackage{xcolor}
+%\definecolor{JournalBlue}{RGB}{0, 12, 146}
+
+\definecolor{JournalBlue}{RGB}{25, 63, 144}
+
+%https://en.wikibooks.org/wiki/LaTeX/Colors
+\usepackage[colorlinks=true, linkcolor=JournalBlue, filecolor=black, urlcolor=JournalBlue, pdfborder={0 0 0},citecolor=JournalBlue]{hyperref}%RoyalBlue
+%\usepackage[colorlinks]{hyperref}
+
+\clubpenalty = 10000 
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+\setlength\parindent{0pt}
+
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\large\bfseries\onehalfspacing}{\thesection}{3em}{}
+
+\titleformat{\subsection}
+{\normalfont\bfseries\onehalfspacing}{\thesection}{3em}{}
+
+
+\begin{document}
+	
+
+\singlespacing
+
+\begin{comment}
+\noindent
+\adjustbox{valign=t}{\begin{minipage}{0.24\textwidth}% adapt widths of minipages to your needs
+%\includegraphics[width=\linewidth]{pictures/ucd_logo}
+\includegraphics[width=\linewidth]{pictures/ucd_cpl_merged.png}
+\end{minipage}}%
+\hfill%
+\adjustbox{valign=t}{\begin{minipage}{0.9\textwidth}\raggedleft
+{%\footnotesize
+\textbf{Stefan Müller, PhD} \\
+Assistant Professor and Ad Astra Fellow \\
+School of Politics and International Relations\\
+University College Dublin \\
+Belfield, Dublin 4, Ireland \\
+%\Telefon\ + 353\,89\,975\,25\,79 \\
+\Letter\ \href{mailto:stefan.mueller@ucd.ie}{stefan.mueller@ucd.ie}\\
+\ComputerMouse\ \url{https://muellerstefan.net} \\
+}
+\end{minipage}}
+\end{comment}
+
+
+\noindent
+\adjustbox{valign=t}{\begin{minipage}{0.3\textwidth}% adapt widths of minipages to your needs
+\includegraphics[width=0.8\textwidth]{pictures/ucd_cpl_merged}
+\end{minipage}}%
+\hfill%
+\adjustbox{valign=t}{\begin{minipage}{0.7\textwidth}\raggedleft
+{%\small 
+\textbf{Stefan Müller, PhD}\\
+Assistant Professor and Ad Astra Fellow \\
+School of Politics and International Relations\\
+University College Dublin \\
+Belfield, Dublin 4, Ireland \\
+\Letter\ \href{mailto:stefan.mueller@ucd.ie}{\textsf{stefan.mueller@ucd.ie}}\\
+\ComputerMouse\ \url{https://muellerstefan.net} \\
+}
+\end{minipage}}
+
+
+
+\singlespacing
+\vspace{1cm}
+
+\begin{center}
+{\large %Year 3 Module; 
+Spring Trimester 2021} \\ 
+\bigskip
+
+{\Large \textbf{Connected\_Politics} (\href{https://sisweb.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=POL42350}{POL42350})} 
+\bigskip
+
+
+{\large  {Draft (last update: \today)}}\\
+\bigskip
+
+%\textbf{Note: Draft -- subject to change}
+
+Latest version: \url{https://muellerstefan.net/teaching/2021-spring-connected-politics.pdf}
+\end{center}
+
+\vspace{1.5cm}
+
+
+
+\hrule
+\medskip
+% first column
+\begin{minipage}[t]{0.5\textwidth}
+Term: Spring Trimester 2021 \\
+Time: Wednesday, 2:00pm--3:50pm \\
+Location:  online (Zoom) \\ %\href{https://www.ucd.ie/t4cms/UCD%20Student%20Centre.pdf}{Lecture: QUI 006; Lab: F20 Newstead} \\
+ECTS: 10.0 \\
+Format: group work; seminar attendance
+\end{minipage}
+%second column
+\begin{minipage}[t]{0.49\textwidth}
+\begin{flushright}
+Module Coordinator: Stefan Müller \\
+ \href{mailto:stefan.mueller@ucd.ie}{\textsf{stefan.mueller@ucd.ie}} \\
+ \url{https://muellerstefan.net} \\
+Office:  Newman Building \\
+Office hours: Tuesday, 10:00--12:00 (via Zoom)
+\end{flushright}
+\end{minipage}
+\medskip
+%\vspace{2.5mm}
+\hrule 
+
+\section*{Introduction}
+
+
+Welcome to Connected\_Politics! This module trains you to conduct research projects relating to computational social science in small teams under the supervision of an assigned project coordinator and the module coordinator. You will apply cutting-edge methods, such as quantitative text analysis, machine learning, image recognition, and network analysis, to answer social science research questions. You will learn how to collaborate on research projects with your peers, setting out short-term and longer-term goals, and dividing up various tasks within  groups. At the end of the module, you will have gained significant experience in designing and executing a collaborative academic research project.
+
+
+
+\begin{comment}
+For the applied parts of this course, such as data import, data wrangling, and data visualisation, we will read parts of the following textbooks. Both books will also help you with your homework assignments and the technical elements of your course paper. 
+
+\begin{itemize}
+\item \fullcite{wickham17}. URL: \url{https://r4ds.had.co.nz}.
+\item \fullcite{healy19}. URL: \url{https://r4ds.had.co.nz}.
+\end{itemize}
+
+
+We will work extensively with the \textsf{R} statistical programming language. The three books mentioned above \autocite{ismay20,wickham17,healy19}   provide detailed and intuitive examples and the corresponding \textsf{R} code (based on the \href{https://www.tidyverse.org}{\texttt{tidyverse}} approach). In addition to these books, I recommend the following literature for introductions to statistical methods, regression, causal inference, and \textsf{R}:
+
+\begin{itemize}
+\item \textbf{Basic grasp of statistics}: \fullcite{spiegelhalter20}.
+\item \textbf{Research design}: 
+\begin{itemize}
+\item \fullcite{kellstedt18}.
+\item \fullcite{king94}.
+\end{itemize}
+\item \textbf{\textsf{R} and regression analysis}: 
+\begin{itemize}
+\item \fullcite{larsen}.
+\item \fullcite{bryan}.
+\item \fullcite{gelman20}.
+\end{itemize}
+\item \textbf{Data visualisation}: \fullcite{wilke19}.
+\item \textbf{Causal inference}: 
+\begin{itemize}
+%\item \fullcite{buenodemesquita}.
+\item \fullcite{cunningham}.
+\end{itemize}
+\item \textbf{RMarkdown}: \fullcite{wickham17}.
+\end{itemize}
+
+\end{comment}
+
+
+\section*{Learning Outcomes}
+
+\begin{enumerate}
+\item  Execute a demanding research project using methods relating to computational social science
+\item  Collaborate with peers and academic faculty on an academic research project
+\item Evaluate and compare a variety of research methods, sources, data, and analysis
+\item Critically and thoroughly examine a research question through independent, data-driven research
+\item Effectively communicate methods and findings
+\end{enumerate}
+
+
+\section*{Indicative Module Content}
+
+
+\begin{itemize}
+\item Working on collaborative projects
+\item Research design(s) and the role of theory in the ``digital age''
+\item Formulating and designing a research question
+\item Case-selection strategies
+\item Operationalisation and measurement
+\item  Open science practices, research transparency in groups
+\item Replicability and reproducibility of research
+\item Presentation of progress
+\end{itemize}
+
+
+\section*{Approaches to Teaching and Learning}
+
+
+This project will train you how to comment critically and constructively on working papers during and after  research seminars, and how to conduct a demanding research project using methods relating to computational social science. To reach these goals, you will  attend the Connected\_Politics Lab seminar series,  work in groups,  allocate tasks, present your progress, and write a research paper. The module centres on active and task-based learning in groups along with interactive seminar discussions, and check-in meetings after each seminar to discuss the progress and open questions.
+
+
+
+
+\section*{Expectations, Assessment, and Grading}
+
+
+\begin{itemize}
+\item \textbf{Seminar} (throughout the trimester): Attending the \href{https://www.ucd.ie/connected_politics/events/}{Connected\_Politics Lab} seminar in Spring Term 2021 and writing response papers on presentations (pass/fail; at least 5 response papers must receive a `pass'  grade); response papers must be submitted until the Monday (8:00pm, \href{https://www.timeanddate.com/time/zones/ist-ireland}{Irish Standard Time (IST)}) after  the presentation [20\% of final grade]
+\item \textbf{Presentation} (week 7): : Conference-style presentation of the research question, data, methods, initial results, and progress on the project  [20\% of final grade]
+\item \textbf{Group Project} (week 12): A 6,000-word research paper; deadline Friday, 23 April 2021, 8:00pm, IST	  [60\% of final grade]
+\end{itemize}
+
+
+
+%\section*{Expectations and Grading}
+
+\subsection*{Response Papers}
+
+
+Students attend the \href{https://www.ucd.ie/connected_politics/events/}{Connected\_Politics Lab Seminar Series} and write \textbf{one-page response papers} on the presentations by external presenters. First, you should summarise the research project in 2--3 sentences. Afterwards,  you should identify either a limitation of the project or a possible extension. Note that what you propose should be feasible (ideally by you). If, for example, you find the author's data weak, then you should identify better data, or at least propose a plausible way of collecting these data. If you think the method is wrong, explain why and suggest a better one. If the conclusions do not follow from the premises, discuss what conclusions are actually supported.  You should outline a specific course of action.  
+ 
+ 
+Students need to attend the following seminars and submit at least five response papers with a ``pass grade''. The Zoom links will be distributed on Brightspace and the Slack channel for this module.  Response papers must be submitted until the Monday (8:00pm, IST) after the presentation. For example, for the presentation on 27 January (Wednesday), the response paper must be submitted no later than Monday, 1 February, 8:00pm (IST).
+
+
+All seminars take place via Zoom between 2pm and 2:50pm (IST). After each presentation, we will have an informal check-in meeting to discuss questions that came up during your group work.
+
+\begin{itemize}
+\item 27 January 2021 -- Jesper Lindqvist (UCD): \textit{A Political Esperanto, or False Friends? – 'Left' and 'Right' in Different Political Contexts}
+\item 10 February 2021 -- Kevin Munger (Penn State University): \textit{Fifteen Seconds of Fame: TikTok and the Democratization of Mobile Video on Social Media}
+\item 24 February 2021 -- Olessia Koltsova (HSE University): \textit{What Do Online Experiments Tell Us About Political Fake News Recognition and Trust?}
+\item 24 March 2021 -- Sandra González-Bailón (University of Pennsylvania): \textit{Exposure to News in the Digital Age: How Online Networks Shape the Consumption of Political Information}
+\item 7 April 2021 -- Anita Ghodes (Hertie School of Governance): \textit{Online and Offline Responses to Protest in Electoral Autocracies}
+\item 21 April 2021 -- Taha Yasseri (UCD): \textit{The Double-edged Sword of Online Politics}
+\end{itemize}
+
+
+\subsection*{Group Work}
+
+In the introductory session on 20 January 2021 (2:00pm--3:50pm, IST), project coordinators will present a variety of research projects. You can choose three projects and you will be allocated to one of these projects. You work with your group on this project throughout the entire term. 
+
+Each group \textbf{presents the progress} of their research projects in Week 7 (Wednesday, 3 March, 2:00pm--4:00pm, IST). This presentation should outline the research question, the theoretical expectations for your empirical analysis, describe the data, provide descriptive statistics and plots of the data, and (if possible) include a preliminary analysis. 
+
+ Each group submits a \textbf{6,000 word research paper}. The research paper builds on the proposals by the project coordinators and the presentation in Week 7. Each group will receive one grade (not individual grades per student), but you will be asked to clearly indicate who took over which parts of the project. You  must submit the research papers no later than \textbf{Friday, 23 April 2021} (8:00pm, IST).
+ 
+ 
+
+The research paper should contain the following sections:
+\begin{itemize}
+\item \textbf{Introduction and research question} 
+\begin{itemize}
+\item Explain the puzzle and research question
+\item Highlight the relevance
+\item Include the central hypothesis to be tested
+\end{itemize}
+\item \textbf{Theory and expectations} 
+\begin{itemize}
+\item Explain the theoretical assumptions based on previous findings regarding the  relationship between your dependent variable and the key independent variable
+\end{itemize}
+\item \textbf{Methodology} 
+\begin{itemize}
+\item Describe your dataset, the unit of analysis, the number of observations included in the analysis, the number of missing observations (if appropriate), the measurement of key variables, and the empirical analysis
+\end{itemize}
+\item \textbf{Results}
+\begin{itemize}
+\item Present the results of your empirical analysis.
+\end{itemize}
+\item \textbf{Conclusion}
+\begin{itemize}
+\item Referring back to the introduction, what can we conclude, and what have we learned?
+\end{itemize}
+\end{itemize}
+
+
+
+Feedback will be provided by your project coordinator and the module coordinator  throughout the module. The module coordinator (Stefan Müller) will grade the progress report, presentations, participation, and research paper. All assignments will be uploaded on BrightSpace.  The communication for this module takes place through \href{https://slack.com}{Slack} workspace. Please make sure to check the workspace once a day.
+
+
+Each group will receive one grade (not individual grades per student) for the presentation and the research paper. However, you will be asked who took over which parts of the project.  More details on the presentation will be provided in a separate document. 
+
+\textit{Important}: it is the students' responsibility to raise alarm if collaboration in your project work is lacking. Please inform the module coordinator as soon as possible.
+
+
+\begin{comment}
+
+For information on academic writing, I recommend the following two sources:
+\begin{itemize}
+\item \fullcite{heard16}.
+\item \fullcite{dunleavy14}.
+\end{itemize}
+
+If you require information on proper citation style, please refer to the guidelines of the American Political Science Association:
+
+\begin{itemize}
+\item \fullcite{apsa18}.
+\end{itemize}
+\end{comment}
+
+
+
+\begin{table}[h] \centering \onehalfspacing
+\caption*{Student effort hours}
+\begin{tabular}{ l r} 
+\toprule
+Student effort type &  Hours \\
+\midrule
+Lectures & 13 \\
+Autonomous Student Learning  & 211 \\
+\textbf{Total} & \textbf{224} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section*{Plagiarism}
+
+Although this should be obvious, plagiarism -- copying someone else's text without acknowledgement or beyond `fair use' quantities -- is not allowed. Plagiarism is an issue we take very seriously here in UCD. Please familiarise yourself with the definition of plagiarism on UCD's website\footnote{\url{https://libguides.ucd.ie/academicintegrity}.} and make sure not to engage in it.
+
+
+
+\section*{Late Submission Policy}
+
+All written work must be submitted on or before the due dates. Students/groups will lose one point of a grade for work up to 5 working days late ($B-$ becomes $C+$). Students will lose two grade points for work between 5 and 10 working days late ($B-$ becomes $C$). When more than two weeks are necessary, the student will need to apply for extenuating circumstances application via the SPIRe Programme Office.
+
+
+
+\section*{Syllabus Modification Rights}
+
+I reserve the right to reasonably alter the elements of the syllabus at any time by adjusting the reading list to keep pace with the course schedule. Moreover, I may change the content of specific sessions, depending on the participants' prior knowledge and research interests. If I make adjustments, I will send an email to all seminar participants and upload the revised syllabus to Brightspace.
+
+%\newpage
+
+
+
+\tableofcontents
+
+\section{20 January 2021: Introductory Session} \label{introsession}
+
+In our introductory session, we will outline the content and expectations for this module. Besides, the project coordinators will shortly present  research projects for this module. After this session, we will distribute an online form where students can express up to four preferences. The following texts (all on Brightspace) offer a good and concise introduction to the field of computational social science. Please read these texts before class:
+
+
+\begin{itemize}
+\item \fullcite{lazer20}. 
+\item \fullcite[ch.1--2]{salganik18} (focus mainly on ch.1; skim ch. 2).
+\item \fullcite[ch. 1]{vanatteveldt21}.
+\end{itemize}
+%\newpage
+%\sloppy
+%\renewcommand*{\bibfont}{\small}
+%\onehalfspacing
+%\setlength{\bibitemsep}{0.2em} % increase space between references
+%\printbibliography
+
+
+
+\section{27 January 2021 -- Jesper Lindqvist (UCD)}
+
+\textit{A Political Esperanto, or False Friends? – `Left' and `Right' in Different Political Contexts} (with Jos Elkink)
+ 
+\textit{Abstract}: The Left-Right dimension has been and continues to be a prominent component of advanced representative democracies, which is used to simplify the political landscape. Nevertheless, it is unclear why the same two terms are used in multiple countries. This would imply that the terminology has a similar core meaning in different political contexts. Yet no such stable element has been established in the political science literature. This paper examines five different possible criteria that have been proposed to separate left from right: change/resistance to change, secular/religious, equality/inequality, equality of outcome/equality of opportunity and for/against government intervention in the economy. We examine these criteria in eight different countries (with varying political contexts), by studying responses to open-ended survey questions on what the terms "left" and "right" mean. The data are analysed using quantitative text analysis (more specifically topic modelling through Non-negative Matrix Factorization) to examine how respondents understand the left-right terminology. The overall results demonstrate varied support for the different explanations, with the most support found for equality/inequality, for/against government intervention in the economy, as well as change/resistance to change. We find little evidence for the two criteria secular/religious and equality of outcome/equality of opportunity.
+
+
+\textbf{About the speaker}: Jesper Lindqvist is a PhD Candidate in the School of Politics and International Relations at University College Dublin. His current research is focused on understanding the meaning of left-right politics in representative democracies. In addition, his research interests also include public opinion, ideological dimensions and democratic representation.
+
+
+We will have an informal check-in meeting after the seminar (from 3:00pm--3:30pm) to discuss questions that came up during your group work.
+
+\section{10 February 2021 -- Kevin Munger (Penn State University)}
+ 
+ 
+\textit{Fifteen Seconds of Fame: TikTok and the Democratization of Mobile Video on Social Media}
+
+
+\textit{Abstract}: TikTok has rapidly developed from a punchline for jokes about “kids these days" into a formidable force in American politics. The speed of this development is unprecedented, even in the rapidly-changing world of digital politics. Through a combination of hashtag and snowball sampling, we identify 5,495 TikTok accounts who primarily post about politics, allowing us to analyze trends in the posting, viewing and commenting behavior on 712,193 tiktoks they have uploaded. We test a number of theories about how the unique combination of a ordances on TikTok shapes how it is used for political communication.
+
+\textit{About the speaker}: Kevin Munger is an Assistant Professor of Political Science and Social Data Analytics at Penn State University. His research looks at social media and other contemporary internet technology has changed political communication. Kevin has published research on the subject using a variety of methodologies, including textual analysis, field experiments, longitudinal surveys and qualitative theory. Kevin's research has appeared in leading journals like the American Journal of Political Science, Political Behavior, Political Communication, and Political Science Research and Methods. His present interests include cohort conflict in American politics and developing new methods for social science in a rapidly changing world.
+  
+  
+  
+We will have an informal check-in meeting after the presentation (from 3:00pm--3:30pm) to discuss questions that came up during your group work.
+  
+  
+\section{24 February 2021 -- Olessia Koltsova (HSE University)} 
+
+\textit{What Do Online Experiments Tell Us About Political Fake News Recognition and Trust?}
+
+
+\textit{Abstract and details on the speaker will follow and be added to this document.}
+
+
+We will have an informal check-in meeting after the presentation (from 3:00pm--3:30pm) to discuss questions that came up during your group work.
+
+
+\section{3 March 2021 -- Group Presentations}
+
+In this session, each group will present their progress. More details on the structure of the presentations will be provided on Brightspace.
+
+
+
+\section{24 March 2021 -- Sandra González-Bailón (University of Pennsylvania)}
+
+
+ \textit{Exposure to News in the Digital Age: How Online Networks Shape the Consumption of Political Information}
+ 
+ \textit{Abstract and details on the speaker will follow and be added to this document.}
+
+ 
+ We will have an informal check-in meeting after the presentation (from 3:00pm--3:30pm) to discuss questions that came up during your group work.
+ 
+\section{7 April 2021 -- Anita Ghodes (Hertie School of Governance)}
+
+ \textit{Online and Offline Responses to Protest in Electoral Autocracies}
+
+\textit{Abstract and details on the speaker will follow and be added to this document.}
+
+
+We will have an informal check-in meeting after the presentation (from 3:00pm--3:30pm) to discuss questions that came up during your group work.
+
+
+\section{21 April 2021 -- Taha Yasseri (UCD)}
+
+
+ \textit{The Double-edged Sword of Online Politics}
+
+\textit{Abstract and details on the speaker will follow and be added to this document.}
+
+
+We will have an informal check-in meeting after the presentation (from 3:00pm--3:30pm) to discuss questions that came up during your group work.
+
+
+
+
+\section{Additional Meetings Throughout the Term}
+
+Besides the \href{https://www.ucd.ie/connected_politics/events/}{six Connected\_Politics Lab seminars}, the initial meeting on 20 January, and the group presentations on 3 March, you will be meet the other group members (virtually) to work on  the research project. It is your task to organise group meetings, allocate tasks, and communicate with your peers. We recommend that you communicate and chat through Slack and that you have at least one  group meeting  every week to discuss your progress and allocate further tasks. 
+
+
+ In addition, you will have at least two extensive meetings with your project coordinator. The project coordinators will provide a list of literature to get you started with your project, answer selected questions about methods or software. Yet, it is your task to get to dig into these packages and write code -- working with software and coding collaboratively are integral parts of the group work. The project coordinator will also meet you after your presentation to discuss strengths and weaknesses and the required actions for the research paper.
+
+
+\textit{Important}: it is the students' responsibility to raise alarm if collaboration in your project work is lacking. Please inform the module coordinator as soon as possible.
+
+
+If anything is unclear, you can always contact the module coordinator (Stefan Müller) via Slack.
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
