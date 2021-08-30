@@ -1,0 +1,612 @@
+\documentclass[abstract=on,parskip=full,headings=standardclasses,fontsize=11pt,paper=a4]{scrartcl}
+%\usepackage[paper=a4paper,left=21mm,right=21mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[paper=a4paper,left=22mm,right=22mm,top=20mm,bottom=25mm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\usepackage{adjustbox}
+%\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage{fullpage}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{comment}
+\urlstyle{sf}
+\usepackage{lmodern}
+\usepackage[parfill]{parskip}
+%\usepackage{url}
+%\urlstyle{same}
+\usepackage[small]{titlesec}
+\usepackage{marvosym}
+
+\setcounter{secnumdepth}{0}
+
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Course Structure}%
+}
+
+
+
+\input{mueller_bib_custom.tex}
+
+\bibliography{/Users/smueller/Documents/GitHub/literature/muellerlibrary.bib}
+%\bibliography{/Users/stefan/GitHub/literature/muellerlibrary.bib}
+
+
+\usepackage{xcolor}
+%\definecolor{JournalBlue}{RGB}{0, 12, 146}
+
+\definecolor{JournalBlue}{RGB}{25, 63, 144}
+
+%https://en.wikibooks.org/wiki/LaTeX/Colors
+\usepackage[colorlinks=true, linkcolor=JournalBlue, filecolor=black, urlcolor=JournalBlue, pdfborder={0 0 0},citecolor=JournalBlue]{hyperref}%RoyalBlue
+%\usepackage[colorlinks]{hyperref}
+
+\clubpenalty = 10000 
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+\setlength\parindent{0pt}
+
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\large\bfseries\onehalfspacing}{\thesection}{3em}{}
+
+   
+
+\begin{document}
+	
+
+\singlespacing
+
+\begin{comment}
+\noindent
+\adjustbox{valign=t}{\begin{minipage}{0.24\textwidth}% adapt widths of minipages to your needs
+%\includegraphics[width=\linewidth]{pictures/ucd_logo}
+\includegraphics[width=\linewidth]{pictures/ucd_cpl_merged.png}
+\end{minipage}}%
+\hfill%
+\adjustbox{valign=t}{\begin{minipage}{0.9\textwidth}\raggedleft
+{%\footnotesize
+\textbf{Stefan Müller, PhD} \\
+Assistant Professor and Ad Astra Fellow \\
+School of Politics and International Relations\\
+%Connected\_Politics Lab \\
+University College Dublin \\
+Belfield, Dublin 4, Ireland \\
+%\Telefon\ + 353\,89\,975\,25\,79 \\
+\Letter\ \href{mailto:stefan.mueller@ucd.ie}{stefan.mueller@ucd.ie}\\
+\ComputerMouse\ \url{https://muellerstefan.net} \\
+}
+\end{minipage}}
+\end{comment}
+
+
+\noindent
+\adjustbox{valign=t}{\begin{minipage}{0.3\textwidth}% adapt widths of minipages to your needs
+\includegraphics[width=0.8\textwidth]{pictures/ucd_cpl_merged}
+\end{minipage}}%
+\hfill%
+\adjustbox{valign=t}{\begin{minipage}{0.7\textwidth}\raggedleft
+{%\small 
+\textbf{Stefan Müller, PhD}\\
+Assistant Professor and Ad Astra Fellow \\
+%Founding Member of The Connected\_Politics Lab\\
+%Connected\_Politics Lab\\
+School of Politics and International Relations\\
+University College Dublin \\
+Belfield, Dublin 4, Ireland \\
+\Letter\ \href{mailto:stefan.mueller@ucd.ie}{\textsf{stefan.mueller@ucd.ie}}\\
+\ComputerMouse\ \url{https://muellerstefan.net} \\
+}
+\end{minipage}}
+
+
+
+\singlespacing
+\vspace{1cm}
+
+\begin{center}
+{\large %Year 3 Module; 
+Autumn Trimester 2021} \\ 
+\bigskip
+
+{\Large \textbf{Introduction to Statistics} (\href{https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=POL40950}{POL40950})} 
+\bigskip
+
+
+{\large  {Last update: \today}}\\
+\bigskip
+
+%\textbf{Note: Draft -- subject to change}
+
+Latest version: \url{https://muellerstefan.net/teaching/2021-autumn-introstats.pdf}
+\end{center}
+
+\vspace{1.5cm}
+
+
+
+\hrule
+\medskip
+% first column
+\begin{minipage}[t]{0.5\textwidth}
+Term: Autumn Trimester 2021 \\
+Time: Lecture \& Lab: Mon, 13:00--14:45 \\
+Location:  Q279 \\
+ECTS: 10.0 \\
+Format: Lectures; lab work; blended learning
+\end{minipage}
+%second column
+\begin{minipage}[t]{0.49\textwidth}
+\begin{flushright}
+Module Coordinator: Stefan Müller \\
+ \href{mailto:stefan.mueller@ucd.ie}{\textsf{stefan.mueller@ucd.ie}} \\
+ \url{https://muellerstefan.net} \\
+Office:  Newman Building, G312 \\
+Office hours: Tue, 13:00--14:00
+\end{flushright}
+\end{minipage}
+\medskip
+%\vspace{2.5mm}
+\hrule 
+
+\section*{Introduction}
+
+%Introduction to the use of data for statistical analysis in political science and related disciplines (sociology, public policy, international relations, etc.). The module will introduce concepts such as measurement, variables, statistical data, and provide an introduction to basic descriptive statistics summarizing numerical data, both graphically and numerically. 
+
+Welcome to Introduction to Statistics! In this course you will learn about concepts such as measurement, variables, statistical data and get equipped to answer a social science research question using linear statistical models and the statistical programming language \textsf{R}.
+
+Do you want to know whether more informed voters are more likely to have liberal values? Are political parties responsive to the issue priorities by voters? Are  democracies less likely to initiate a war? Do high tax rates lead to higher levels of corruption? Can voters accurately predict the government that will be formed after an election? Answering such questions usually requires the analysis of data  
+-- information about people, parties, communication, firms, or nations.
+
+There are many other statistical tools available to the social scientist, but regression analysis is by far the most common. A thorough understanding of this method is required to read or write quantitative social science papers and research reports. The course therefore will mainly focus on regression analysis -- including model specification (which variables to include in a model?) and statistical inference (how do I know whether my findings hold for cases beyond my sample?).
+
+By the end of this module, you will have gained a basic understanding of statistics and the so called frequentist approach of hypothesis testing. The lab sessions and two homework assignments will make you familiar with the \textsf{R} statistical programming language and prepare you two write an original quantitative research paper. 
+
+
+The core textbook for the course is \textcite{ismay20}, which is freely available online at \url{https://moderndive.com}.\footnote{\fullcite{ismay20}. URL: \url{https://moderndive.com}.} This book takes a modern, data science approach to regression analysis. The differences between data science and more typical quantitative social science will be discussed in class, in particular in the context of model specification. In addition, the textbook by \textcite{llaudet22} provides intuitive examples and explanations for most of the concepts discussed in this module. The vast majority of books are freely available online: simply click on the book title in blue font and you should be directed to the free online version of the book. %\footnote{The structure of this module is similar to \href{http://www.joselkink.net/STATS-Autumn-2019.php}{Introduction to Statistics} taught at the School of Politics and International Relations in previous years. I thank Jos Elkink for allowing me to follow and adjust the structure of the previously taught module.}
+
+For the applied parts of this course, such as data import, data wrangling, and data visualisation, we will read parts of the following textbooks. Both books will also help you with your homework assignments and the technical elements of your course paper. 
+
+\begin{itemize}
+\item \fullcite{wickham17}. URL: \url{https://r4ds.had.co.nz}.
+\item \fullcite{healy19}. URL: \url{https://r4ds.had.co.nz}.
+\end{itemize}
+
+
+We will work extensively with the \textsf{R} statistical programming language. The three books mentioned above \autocite{ismay20,wickham17,healy19}   provide detailed and intuitive examples and the corresponding \textsf{R} code (based on the \href{https://www.tidyverse.org}{\texttt{tidyverse}} approach). In addition to these books, I recommend the following literature for introductions to statistical methods, regression, causal inference, and \textsf{R}:
+
+\begin{itemize}
+\item \textbf{Basic grasp of statistics and quantitative methods}: 
+\begin{itemize}
+\item \fullcite{spiegelhalter20}.
+%\item \fullcite{llaudet22}.
+\end{itemize}
+
+\item \textbf{Research design and causal inference}: 
+\begin{itemize}
+%\item \fullcite{buenodemesquita}.
+\item \fullcite{huntingtonklein21}.
+\item \fullcite{cunningham21}.
+\end{itemize}
+\item \textbf{\textsf{R} and regression analysis}: 
+\begin{itemize}
+\item \fullcite{larsen}.
+%\item \fullcite{bryan}.
+\item \fullcite{gelman20}.
+%\item \fullcite{roback20}.
+\end{itemize}
+\item \textbf{Data visualisation}: \fullcite{wilke19}.
+\item \textbf{RMarkdown}: \fullcite[ch. 27, 29]{wickham17}.
+\end{itemize}
+
+\section*{Learning Outcomes}
+
+\begin{enumerate}
+\item basic understanding of working with \textsf{R} and RStudio
+\item being able to wrangle, summarise, describe, and visualise statistical data
+\item  basic understanding of (frequentist) statistical inference
+\item  basic understanding of executing and interpreting multiple regression
+\item  preliminary understanding of logistic regression
+\end{enumerate}
+
+
+\section*{Approaches to Teaching and Learning}
+
+The sessions consist of lectures and labs each week. Some of the lectures and labs will be online. The lectures focus on the fundamental aspects of statistical inference as well as the interpretation of these methods and examples. %The lectures will make use of small  exercises and quizzes.
+
+In the  lab sessions, students will be provided with clear instructions and solve problems related to data wrangling, visualisation and statistical methods. The homework assignments are structured so that they gradually lead up to a comprehensive regression analysis and associated social science paper, putting the technical material of the class in practice.
+
+I will make extensive use of quizzes  throughout the lectures to increase engagement in times of blended learning. In addition, I will distribute several short feedback surveys during the term in which you can indicate what you can provide feedback, ask questions, and make improvement suggestions. 
+
+\section*{Overview of Assessment}
+
+\begin{itemize}
+\item Homework assignment (Week 4): 25\% 
+\item Homework assignment  (Week 7): 25\% 
+\item Course paper (end of trimester): 50\%
+\end{itemize}
+
+
+\section*{Expectations and Grading}
+
+
+Students submit two \textbf{homework assignments} during the term (after the end of Week 3 and Week 6). Each homework counts towards 25\% of the final grade.  The homeworks will be distributed via Brightspace 14 days before the submission deadline as an RMarkdown file.\footnote{For a very short primer to RMarkdown see: \url{https://rmarkdown.rstudio.com/articles_intro.html}. We will discuss how to create and compile RMarkdown files in the first two weeks of the module.} Students fill in the answers and solutions in the same RMarkdown file, rename it to \texttt{hw\_01/02\_surname\_firstname.Rmd}, knit it as an \texttt{html} file, and submit it via Brightspace. Only knitted \texttt{html} files will be accepted. More details on the homeworks will be provided in the first session(s) of the course.
+
+The following grade conversion scheme will be applied to the homework:
+
+
+\begin{table}[h] \centering \singlespacing \footnotesize
+\caption*{Grade Conversion Scheme for Homeworks}
+\begin{tabular}{ l l} 
+\toprule
+Homeworks &  UCD Grade \\
+\midrule
+97--100\% & A+ \\
+94--96\% & A \\
+91--93\% & A-- \\
+88-90\% & B+ \\
+85--87\% & B \\
+83--84\% & B \\
+80--82\% & C+ \\
+77--79\% & C \\
+74--76\% & C-- \\
+71--73\% & D+ \\
+68--70\% & D \\
+65--67\% & E+ \\
+54--64\% & E \\
+44--53\% & E--\\
+0--32\% & F\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+Students also submit a \textbf{course paper} which counts towards 50\% of the final grade. The research paper is a written analysis consisting of 4,000 words (including bibliography, captions, and footnotes). Students are required to  answer a research question using quantitative methods and regression analysis. Students are free to answer questions from all fields of social science, but must justify their choice and the relevance of the question. The course paper must address the following aspects: research gap and relevance; theory and expectations (based on previous research); data and methodological approach; results; conclusion and outlook. The course paper must be submitted via Brightspace as a \texttt{pdf} document before \textbf{Friday, 10 December 2021 (8pm)}.  Detailed instructions on the research paper, the presentation, and the in-class discussion will be provided in class and on Brightspace.
+
+For information on academic writing, I recommend the following two sources:
+\begin{itemize}
+\item \fullcite{heard16}.
+\item \fullcite{dunleavy14}.
+\end{itemize}
+
+If you require information on proper citation style, please refer to the guidelines of the American Political Science Association:
+
+\begin{itemize}
+\item \fullcite{apsa18}.
+\end{itemize}
+
+
+
+\begin{table}[h] \centering \onehalfspacing
+\caption*{Student effort hours}
+\begin{tabular}{ l r} 
+\toprule
+Student effort type &  Hours \\
+\midrule
+Lectures & 12 \\
+Computer Aided Lab  & 12 \\
+Autonomous Student Learning  & 200 \\
+\textbf{Total} & \textbf{224} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section*{Plagiarism}
+
+Although this should be obvious, plagiarism -- copying someone else's text without acknowledgement or beyond `fair use' quantities -- is not allowed. Plagiarism is an issue we take very serious here in UCD. Please familiarize yourself with the definition of plagiarism on UCD's website\footnote{\url{https://libguides.ucd.ie/academicintegrity}.} and make sure not to engage in it.
+
+
+
+\section*{Late Submission Policy}
+
+All written work must be submitted on or before the due dates. Students will lose one point of a grade for work up to 5 working days late ($B-$ becomes $C+$). Students will lose two grade points for work between 5 and 10 working days late ($B-$ becomes $C$). When more than two weeks are necessary, the student will need to apply for extenuating circumstances application via the SPIRe Programme Office.
+
+
+\section*{Questions and Problems}
+
+In this module, we will discuss concepts, methods, and software you might not have heard of before. I am  aware that parts of this module could be challenging and I will assist you as best as I can. In addition to the lectures and lab sessions, I  offer weekly office hours only  for  participants of this module. The office hours will take place in person or via Zoom. I will share the link and password to the virtual room in the first lecture and post it on Brightspace. 
+
+If you struggle to solve problems relating to \textsf{R} or RStudio, please follow the steps outlined below before contacting me. It is very likely that at least one other person faced the same problem before or received the same error message. % If something is not working, try the following steps first before contacting me: 
+\begin{enumerate}
+\item Use the `Search' function in the online books of the recommended textbooks \autocite{ismay20,wickham17,healy19} and look up keywords that relate to your problem or the function that causes a problem. For questions about concepts, I recommend to consult the \href{https://hbiostat.org/doc/glossary.pdf}{Glossary of Statistical Terms}.
+\item Try to summarise the problem in your own words and then google this summary. If the problem relates to \textsf{R}, add \texttt{rstats} to your search query. For example: \texttt{how to import csv file in rstats}. I am almost certain that you find a solution to most of your questions. 
+\item If your \textsf{R} code returns an error, I would advise you to Google the text of the error message.  For example: \texttt{Error: Can't subset columns that don't exist.}
+\end{enumerate}
+
+$\longrightarrow$ If steps 1--3 still do not solve your problem or question, \href{mailto:stefan.mueller@ucd.ie}{please get in touch with me}.  I am happy to help!
+
+I will continuously update an FAQ page on Brightspace with questions that students have asked me and that might be relevant for everyone in the course. 
+
+
+
+\section*{Syllabus Modification Rights}
+
+I reserve the right to reasonably alter the elements of the syllabus at any time by adjusting the reading list to keep pace with the course schedule. Moreover, I may change the content of specific sessions, depending on the participants' prior knowledge and research interests. If I make adjustments, I will send an email to all seminar participants and upload the revised syllabus to Brightspace.
+
+
+
+\section*{Additional Covid-19 Guidelines}
+
+Covid-19 continues to pose a threat to our well-being and health. We all need to follow UCD's guidelines, which involves wearing masks in the lecture rooms. I will also wear  a mask at all times. If you come to my office hours in person, please make sure to wear a mask. If you are unwilling or unable to wear a mask, we can meet virtually. If you are not feeling well, stay home! I try to make all relevant materials available to everyone: I live-will record all lectures, provide the slides, and upload all readings. Protecting everyone's health is most important. Should you be sick or need a longer period of absence, please get in touch  and I happily work with you to ensure your success in this module. We are in this together -- let's try our very best in the months to come and support each other.
+
+
+
+%\newpage
+
+\tableofcontents
+
+\section{Week 1: Accessing and Visualising Data (13--17 September 2021)}
+
+
+\textit{What is quantitative political science? What are data? What is a variable? What are the different levels of measurement? How to describe your variables graphically, including pie charts, histograms. How to look at a distribution?}
+
+\textbf{Important}: Please install \textsf{R}\footnote{Download \textsf{R} for Mac, Windows, or Linux at: \url{https://cloud.r-project.org}} and \textsf{RStudio}\footnote{Download \textsf{RStudio} (Desktop Open Source License [free]) at: \url{https://rstudio.com/products/rstudio/download}} before the start of the first lecture.  \textcite[ch. 1]{ismay20} provide detailed instructions on how to install the required software.
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[ch. 1--2]{ismay20}.
+\item \fullcite[ch. 2]{bryan}.
+%\item \fullcite[ch. 4]{wickham17}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 2]{spiegelhalter20}.
+\item \fullcite[ch. 7, 10]{larsen}.
+\item \fullcite{bryan18}.
+\end{itemize}
+
+\section{Week 2: Descriptive Statistics (20--24 September 2021)}
+
+\textit{How to describe your variables numerically, including the mean, mode, median, variance, and standard deviation. How to describe relations between variables graphically, including bar charts, scatterplots, and boxplots. Discussion of covariance and correlation.}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[ch. 1]{healy19}.
+\item \fullcite[ch. 3--4]{ismay20}.
+\item \fullcite[ch. 3]{larsen}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{wilson17}.
+\end{itemize}
+
+
+
+
+
+\section{Week 3: Simple Regression (27 September--1 October 2021)}
+
+\textit{Descriptive univariate linear regression models -- how to look at the relation between two continuous variables.}
+
+
+\subsubsection*{Mandatory Readings}
+
+\begin{itemize}
+\item \fullcite[ch. 5]{ismay20}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 9]{kellstedt18}.
+\item \fullcite{mccauley20}.
+\end{itemize}
+
+
+\section{Week 4:  Multiple Regression (4--8 October 2021)}
+
+\textit{How to perform and interpret regression models with more than one independent variable. How to think about the difference between prediction and causal inference? Some discussion of model specification.}
+
+
+\begin{itemize}
+\item \fullcite[ch. 6]{ismay20}.
+\item \fullcite[ch. 10]{kellstedt18}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 11]{larsen}.
+\item \fullcite{hardy93}.
+\end{itemize}
+
+
+\section{Week 5: Multiple Regression -- Categorical Independent Variables and Interactions (11--15 October 2021)}
+
+
+\textit{Categorical independent variables in multiple regression. Modeling interaction effects in multiple regression.}
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[ch. 7]{fox15}.
+\item \fullcite[ch. 6.1.2]{ismay20}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{hainmueller19}.
+\item \fullcite{clark06}.
+%\item \fullcite{solt17}.
+\end{itemize}
+
+%\section{Reading Week (26--30 October 2020) }
+
+
+
+\section{Week 6:  Sampling Distributions and Central Limit Theorem (18--22 October 2021)}
+
+
+\textit{What are probabilities and probability distributions? Introduction to the normal distribution. What is statistical inference? Introduction to sampling methods. What is the Central Limit Theorem?}
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite[ch. 8]{ismay20}.
+\item \fullcite[ch. 7]{kellstedt18}.
+\end{itemize}
+
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{hoekstra14}.
+\end{itemize}
+
+
+\section{Week 7:  Bank Holiday Monday  (25--29 October 2021)}
+
+The lecture and lab session are cancelled due to the  Bank Holiday on 25 October. However, I will facilitate a virtual Q\&A session, dealing with questions focusing on questions relating to theory, coding, or your final research projects. This session will take place on Zoom. We will discuss a date and time for this meeting in Week 2.
+
+
+\section{Week 8:  Hypothesis Tests and Confidence Intervals (1--5 November 2021)}
+
+
+\textit{What are hypothesis tests and confidence intervals? How to think of statistical inference in multiple regression analysis.}
+
+
+\begin{itemize}
+\item \fullcite[ch. 9--10]{ismay20}.
+%\item \fullcite[ch. 7]{kellstedt18}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 7]{spiegelhalter20}.
+\end{itemize}
+
+
+\section{Week 9: Reporting Data, Methods, and Results (18--12 November 2021)}
+
+
+\textit{How to present and interpret regression results. How to structure a quantitative research paper. How to convince the reader of the robustness of your results.}
+
+
+\subsubsection*{Mandatory Readings}
+\begin{itemize}
+\item \fullcite{king06}.
+\item \fullcite[ch. 11]{ismay20}.
+\item \fullcite[ch. 1]{firebaugh08}.
+\end{itemize}
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 12]{spiegelhalter20}.
+%\item \fullcite[ch. 4--5]{healy19}.
+\item \fullcite[ch. 13--14]{larsen}.
+\end{itemize}
+
+
+
+\section{Week 10: Multiple Regression --  Diagnostics and Model Fit (15--19 November 2021)}
+
+
+\textit{How to think about model fit in the contexts of prediction and causal inference. Statistical versus modelling considerations in model specification. Common problems in regression analysis (and hints at solutions).}
+
+\begin{itemize}
+\item \fullcite[ch. 11]{kellstedt18}.
+%\item \fullcite[ch. 11-12]{ismay20}.
+%\item \fullcite[ch. 7]{kellstedt18}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 11.4]{larsen}.
+\end{itemize}
+
+
+\section{Week 11: Improving the Interpretation and Visualisation of Regression Results (22--26 November 2021)}
+
+
+\textit{How to improve the presentation of substantive effects and interactions given that regression tables and coefficients may be difficult to interpret.}
+
+\begin{itemize}
+\item \fullcite{king00}.
+\item \fullcite[ch. 12]{kellstedt18}.
+\end{itemize}
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 3]{gelman20}.
+\item \fullcite[ch. 6, 8]{healy19}.
+%\item \fullcite{gill19}.
+\end{itemize}
+ 
+\section{Week 12: Logistic Regression  (29 November--3 December 2021)}
+
+%Before the first lecture, I will distribute a short survey. You can indicate your prior experience with qualitative and quantitative methods and also select which topic you would like to cover in the last session of this module. 
+
+\textit{Regression analysis when the dependent variable is binary -- e.g. explaining whether or not a citizens turns out to vote on election day. Introduction to logistic regression.}
+
+
+\begin{itemize}
+\item Reproducible research
+\item Advanced data visualisation I
+\end{itemize}
+
+
+\begin{itemize}
+\item \fullcite[ch. 6]{roback20}.
+\end{itemize}
+
+
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite{gill19}.
+\item \fullcite[ch. 4--5]{healy19}.
+\end{itemize}
+
+
+\begin{comment}
+\section{Week 12: Advanced Data Visualisation and Wrap-Up   (14 December--18 December 2020)}
+
+%Before the first lecture, I will distribute a short survey. You can indicate your prior experience with qualitative and quantitative methods and also select which topic you would like to cover in the last session of this module. 
+
+
+\begin{itemize}
+\item \fullcite{king00}.
+\end{itemize}
+
+
+UDPATE
+
+\subsubsection*{Optional}
+\begin{itemize}
+\item \fullcite[ch. 6, 8]{healy19}.
+\item \fullcite{salganik18}.
+\item \fullcite{lazer20}.
+\end{itemize}
+
+\end{comment}
+
+%\newpage
+%\sloppy
+%\renewcommand*{\bibfont}{\small}
+%\onehalfspacing
+%\setlength{\bibitemsep}{0.2em} % increase space between references
+%\printbibliography
+\end{document}
+
+
+
+
+
+
+
+
