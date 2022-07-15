@@ -244,3 +244,5 @@ TSWLatexianTemp*
 .DS_Store
 .DS_Store
 *.tex
+pictures/.DS_Store
+pictures/.DS_Store
