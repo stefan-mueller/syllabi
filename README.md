@@ -10,7 +10,7 @@ The following syllabi are included in this repository:
 
 ### Spring Term (University of Zurich)
 
-- [Repräsentation und Parteinwettbewerb; (Representation and Party Competition)](docs/2019-spring-rp.pdf) (undergraduate level)
+- [Representation and Party Competition (Repräsentation und Parteinwettbewerb)](docs/2019-spring-rp.pdf) (undergraduate level)
 - [Quantitative Text Analysis](docs/2019-spring-qta.pdf) (postgraduate level)
 
 ### Autumn Term (University of Zurich)
@@ -59,5 +59,3 @@ The following syllabi are included in this repository:
 
 - [Quantitative Text Analysis](docs/2022-spring-qta.pdf) (postgraduate level)
 - [Connected\_Politics](docs/2022-spring-connected-politics.pdf) (postgraduate level)
-
-Note: you can also download all syllabi by navigating to the [`docs`](docs) subfolder in this repository.
