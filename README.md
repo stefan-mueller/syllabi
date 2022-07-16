@@ -1,6 +1,8 @@
 # Stefan Müller's Syllabi
 
-This respository contains all syllabi of semester-long modules taught by [Stefan Müller](https://muellerstefan.net) between 2019 and 2022. You are very welcome to use (parts of) the syllabi for your own modules, but please mention my syllabus and add a link to this [GitHub repository](https://github.com/stefan-mueller/syllabi).
+This respository contains all syllabi (in PDF format) of semester-long modules taught by [Stefan Müller](https://muellerstefan.net) between 2019 and 2022.
+
+You are very welcome to use (parts of) the syllabi for your own modules, but please mention my syllabus and add a link to this [GitHub repository](https://github.com/stefan-mueller/syllabi). Please do not hesitate to contact me if you have any questions: stefan.mueller@ucd.ie
 
 The following syllabi are included in this repository:
 
@@ -57,3 +59,5 @@ The following syllabi are included in this repository:
 
 - [Quantitative Text Analysis](docs/2022-spring-qta.pdf) (postgraduate level)
 - [Connected\_Politics](docs/2022-spring-connected-politics.pdf) (postgraduate level)
+
+Note: you can also download all syllabi by navigating to the [`docs`](docs) subfolder in this repository.
