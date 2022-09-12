@@ -14,6 +14,9 @@ The following syllabi are included in this repository:
 - [Quantitative Text Analysis](docs/2022-spring-qta.pdf) (postgraduate level)
 - [Connected\_Politics](docs/2022-spring-connected-politics.pdf) (postgraduate level)
 
+### Autumn Term (University College Dublin)
+
+- [Introduction to Statistics](docs/2022-autumn-introstats.pdf) (postgraduate level)
 
 ## 2021
 
