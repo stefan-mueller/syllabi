@@ -6,6 +6,13 @@ You are very welcome to use (parts of) the syllabi for your own modules, but ple
 
 The following syllabi are included in this repository:
 
+## 2024
+
+### Spring Term (University College Dublin)
+
+- [Quantitative Text Analysis](docs/2024-spring-qta.pdf) (postgraduate level)
+
+
 ## 2023
 
 ### Spring Term (University College Dublin)
