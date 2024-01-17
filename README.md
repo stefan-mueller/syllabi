@@ -1,6 +1,6 @@
 # Stefan Müller's Syllabi
 
-This respository contains all syllabi (in PDF format) of semester-long modules taught by [Stefan Müller](https://muellerstefan.net) between 2019 and 2023.
+This respository contains all syllabi (in PDF format) of semester-long modules taught by [Stefan Müller](https://muellerstefan.net) between 2019 and 2024.
 
 You are very welcome to use (parts of) the syllabi for your own modules, but please mention my syllabus and add a link to this [GitHub repository](https://github.com/stefan-mueller/syllabi). Please do not hesitate to contact me if you have any questions: stefan.mueller@ucd.ie
 
