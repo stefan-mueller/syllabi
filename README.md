@@ -12,6 +12,9 @@ The following syllabi are included in this repository:
 
 - [Quantitative Text Analysis](docs/2024-spring-qta.pdf) (postgraduate level)
 
+### Autumn Term (University College Dublin)
+
+- Applied Data Wrangling and Visualisation (postgraduate level; syllabus will be released in September 2024)
 
 ## 2023
 
