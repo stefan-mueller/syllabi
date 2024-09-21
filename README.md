@@ -1,6 +1,6 @@
 # Stefan Müller's Syllabi
 
-This respository contains all syllabi (in PDF format) of semester-long modules taught by [Stefan Müller](https://muellerstefan.net) between 2019 and 2024.
+This repository contains all syllabi (in PDF format) of semester-long modules taught by [Stefan Müller](https://muellerstefan.net) between 2019 and 2024.
 
 You are very welcome to use (parts of) the syllabi for your own modules, but please mention my syllabus and add a link to this [GitHub repository](https://github.com/stefan-mueller/syllabi). Please do not hesitate to contact me if you have any questions: stefan.mueller@ucd.ie
 
@@ -14,7 +14,7 @@ The following syllabi are included in this repository:
 
 ### Autumn Term (University College Dublin)
 
-- Applied Data Wrangling and Visualisation (postgraduate level; syllabus will be released in September 2024)
+- [Applied Data Wrangling and Visualisation](https://muellerstefan.net/teaching/2024-autumn-adwv.pdf) (postgraduate level)
 
 ## 2023
 
