@@ -6,6 +6,12 @@ You are very welcome to use (parts of) the syllabi for your own modules, but ple
 
 The following syllabi are included in this repository:
 
+## 2025
+
+### Spring Term (University College Dublin)
+
+- [Quantitative Text Analysis](https://muellerstefan.net/teaching/2025-autumn-adwv.pdf) (postgraduate level)
+
 ## 2024
 
 ### Spring Term (University College Dublin)
