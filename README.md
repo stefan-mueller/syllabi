@@ -20,7 +20,7 @@ The following syllabi are included in this repository:
 
 ### Autumn Term (University College Dublin)
 
-- [Applied Data Wrangling and Visualisation](https://muellerstefan.net/teaching/2024-autumn-adwv.pdf) (postgraduate level)
+- [Applied Data Wrangling and Visualisation](docs/2024-autumn-adwv.pdf) (postgraduate level)
 
 ## 2023
 
