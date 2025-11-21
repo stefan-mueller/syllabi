@@ -10,7 +10,13 @@ The following syllabi are included in this repository:
 
 ### Spring Term (University College Dublin)
 
-- [Quantitative Text Analysis](https://muellerstefan.net/teaching/2025-spring-qta.pdf) (postgraduate level)
+- [Quantitative Text Analysis](docs/2025-spring-qta.pdf) (postgraduate level)
+
+
+### Autumn Term (University College Dublin)
+
+- [Applied Data Wrangling and Visualisation](docs/2025-autumn-adwv.pdf) (postgraduate level)
+
 
 ## 2024
 
