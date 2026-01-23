@@ -1,10 +1,17 @@
 # Stefan Müller's Syllabi
 
-This repository contains all syllabi (in PDF format) of semester-long modules taught by [Stefan Müller](https://muellerstefan.net) between 2019 and 2025.
+This repository contains all syllabi (in PDF format) of semester-long modules taught by [Stefan Müller](https://muellerstefan.net) between 2019 and 2026.
 
 You are very welcome to use (parts of) the syllabi for your own modules, but please mention my syllabus and add a link to this [GitHub repository](https://github.com/stefan-mueller/syllabi). Please do not hesitate to contact me if you have any questions: stefan.mueller@ucd.ie
 
 The following syllabi are included in this repository:
+
+## 2026
+
+## Spring Term (University College Dublin)
+
+- [Quantitative Text Analysis]([docs/2025-spring-qta.pdf](https://muellerstefan.net/teaching/2026-spring-qta.pdf)) (postgraduate level)
+- [Connected_Politics II](https://muellerstefan.net/teaching/2025-2026-connected-politics.pdf) (postgraduate level)
 
 ## 2025
 
@@ -16,7 +23,7 @@ The following syllabi are included in this repository:
 ### Autumn Term (University College Dublin)
 
 - [Applied Data Wrangling and Visualisation](docs/2025-autumn-adwv.pdf) (postgraduate level)
-
+- [Connected_Politics I](https://muellerstefan.net/teaching/2025-2026-connected-politics.pdf) (postgraduate level)
 
 ## 2024
 
